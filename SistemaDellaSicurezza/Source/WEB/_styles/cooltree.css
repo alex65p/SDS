@@ -1,0 +1,73 @@
+/**   ======================================================================== */
+/**                                                                            */
+/** @copyright Copyright (c) 2010-2015, S2S s.r.l. */
+/** @license   http://www.gnu.org/licenses/gpl-2.0.html GNU Public License v.2 */
+/** @version   6.0  */
+/** This file is part of SdS - Sistema della Sicurezza  . */
+/** SdS - Sistema della Sicurezza   is free software: you can redistribute it and/or modify */
+/** it under the terms of the GNU General Public License as published by  */
+/** the Free Software Foundation, either version 3 of the License, or  */
+/** (at your option) any later version.  */
+
+/** SdS - Sistema della Sicurezza  is distributed in the hope that it will be useful, */
+/** but WITHOUT ANY WARRANTY; without even the implied warranty of */
+/** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the */
+/** GNU General Public License for more details. */
+
+/** You should have received a copy of the GNU General Public License */
+/** along with SdS - Sistema della Sicurezza .  If not, see <http://www.gnu.org/licenses/gpl-2.0.html>  GNU Public License v.2 */
+/**                                                                            */
+/**   ======================================================================== */
+
+p {
+	text-align: justify;
+}
+
+.clsNode, .clsNodeUnhilightable { font-family: tahoma; font-size: 8pt;	text-decoration: none; cursor: hand; color: black }
+.clsNode:hover { text-decoration: none; color: #eeeeee; background-color: #003366 }
+
+.clsNodeGroup { font-family: tahoma; text-decoration: none; font-size: 8pt; color: navy; font-weight: bold; }
+.clsNodeGroup:hover { text-decoration: none; color: white; background-color: navy }
+
+.form { border: 1px solid silver; }
+.form td { font-family: tahoma; font-size: 8pt; }
+.form td input, .form td textarea { border: 1px solid silver; background-color: #F0F0F0; font-family: tahoma; font-size: 8pt; }
+.form td select { background-color: #F0F0F0; font-family: tahoma; font-size: 8pt; }
+
+.form td input.chk { border: none; background-color: transparent; }
+
+.array td { border: 1px solid black; }
+.text td { padding: 15px; border: 1px solid black; background-color: #D6D6C0 }
+.text td, .text td p, .text td h2 {
+	font-size : 12px;
+	font-family : Comic Sans MS, Tahoma, Verdana, Arial, Helvetica;
+	text-align: justify;
+}
+.treeViewDiv{
+	border:1px solid #395173;
+	overflow:auto;
+	width:100%;
+	height:100%;
+	/*background-color:#ffffcc;*/
+}
+.overNode{
+	color:#0000ff;
+	font-size: 8pt;
+	cursor:hand;
+}
+.overNode selected{
+	font-size: 8pt;
+	cursor:hand;
+	color:#0000ff;
+	background-color:navy;
+}
+.selectedNode{
+	color:white;
+	background-color:navy;
+	font-size: 8pt;
+}
+.node{
+	cursor:default;
+	color:black;
+	font-size: 8pt;
+}

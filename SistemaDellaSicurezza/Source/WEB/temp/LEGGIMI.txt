@@ -1,0 +1,4 @@
+Questo file NON DEVE ESSERE ELIMINATO.
+
+Una eventuale eliminazione di questo file comprometterà il corretto 
+funzionamento di alcune procedure del "Sistema della Sicurezza".

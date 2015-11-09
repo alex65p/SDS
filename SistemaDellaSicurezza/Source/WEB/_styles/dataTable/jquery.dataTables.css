@@ -1,0 +1,310 @@
+<%--   ======================================================================== --%>
+<%--                                                                            --%>
+<%-- @copyright Copyright (c) 2010-2015, S2S s.r.l. --%>
+<%-- @license   http://www.gnu.org/licenses/gpl-2.0.html GNU Public License v.2 --%>
+<%-- @version   6.0  --%>
+<%-- This file is part of SdS - Sistema della Sicurezza  . --%>
+<%-- SdS - Sistema della Sicurezza   is free software: you can redistribute it and/or modify --%>
+<%-- it under the terms of the GNU General Public License as published by  --%>
+<%-- the Free Software Foundation, either version 3 of the License, or  --%>
+<%-- (at your option) any later version.  --%>
+
+<%-- SdS - Sistema della Sicurezza  is distributed in the hope that it will be useful, --%>
+<%-- but WITHOUT ANY WARRANTY; without even the implied warranty of --%>
+<%-- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the --%>
+<%-- GNU General Public License for more details. --%>
+
+<%-- You should have received a copy of the GNU General Public License --%>
+<%-- along with SdS - Sistema della Sicurezza .  If not, see <http://www.gnu.org/licenses/gpl-2.0.html>  GNU Public License v.2 --%>
+<%--                                                                            --%>
+<%--   ======================================================================== --%>
+
+/*********tabella e bottoni parte bassa****************/
+/***************** Table *****************/
+table.dataTable {
+	margin: 0 auto;
+	clear: both;
+	width: 100%;
+        table-layout: fixed;
+}
+
+/*testata della tabella*/
+table.dataTable thead th {
+        background-color: #1D1AB2; 
+	padding: 3px 10px 3px 10px;
+	font-weight: bold;
+	cursor: pointer;
+        border-top: #0E0C6C 1px inset;
+        border-bottom: #0E0C6C 1px inset;
+
+}
+
+/*linea chiusura tabella */
+table.dataTable tfoot th {
+	padding: 3px 1px 3px 1px;
+	border-top: 1px solid #0E0C6C;
+	font-weight: bold;
+}
+
+tfoot input.search_init {
+	color: #9695A3;
+        width: 100%;
+}
+
+tfoot input.search_init_select {
+        width: 100%;
+}
+
+/* righe della tabella*/
+table.dataTable td {
+	padding: 3px 10px;
+        white-space: normal;/*nowrap*/
+        overflow: auto;/*hidden;*//*altri*/
+        text-overflow: clip;/* ellipsis;*//*altri*/
+}
+
+table.dataTable td div {
+        overflow: hidden; 
+        height: 17px;
+}
+
+table.dataTable td.center,
+table.dataTable td.dataTables_empty {
+	text-align: center;
+}
+
+/************** colore righe tabella odd=pari eve=dispari*********/
+/*ORIGINALE*/
+table.dataTable tr.odd { background-color: #E2E4FF; }
+table.dataTable tr.even { background-color: #fff; }/*colore tabella dispari*/
+
+/*table.dataTable tr.odd td.sorting_1 { background-color: #D3D6FF; }
+table.dataTable tr.odd td.sorting_2 { background-color: #DADCFF; }
+table.dataTable tr.odd td.sorting_3 { background-color: #E0E2FF; }
+table.dataTable tr.even td.sorting_1 { background-color: #EAEBFF; }
+table.dataTable tr.even td.sorting_2 { background-color: #F2F3FF; }
+table.dataTable tr.even td.sorting_3 { background-color: #F9F9FF; }
+*/
+
+table.dataTable tr.odd { background-color: #FFE6C4; }
+table.dataTable tr.even { background-color: #FFFAC4; }/*colore tabella dispari*/
+
+table.dataTable tr.odd td.sorting_1 { background-color: #FFD59A; }
+table.dataTable tr.odd td.sorting_2 { background-color: #FFEFD9; }
+table.dataTable tr.odd td.sorting_3 { background-color: #FFF7EC; }
+table.dataTable tr.even td.sorting_1 { background-color: #FFF69A; }
+table.dataTable tr.even td.sorting_2 { background-color: #FFFCD9; }
+table.dataTable tr.even td.sorting_3 { background-color: #FFFDEC; }
+
+
+
+
+/*
+ * Table wrapper
+ */
+.dataTables_wrapper {
+	position: relative;
+	clear: both;
+	/*zoom: 1;*/
+}
+
+
+/*
+ * Page length menu
+ */
+.dataTables_length {
+	float: left;
+}
+
+
+/*
+ * Filter
+ */
+.dataTables_filter {
+     
+    padding-left:10%;
+	float: left;
+	text-align: right;
+}
+
+
+/*
+ * Table information
+ */
+.dataTables_info {
+	clear: both;
+	float: left;
+}
+
+
+/*
+ * Pagination
+ */
+.dataTables_paginate {
+	float: right;
+	text-align: right;
+}
+
+/* Two button pagination - previous / next */
+.paginate_disabled_previous,
+.paginate_enabled_previous,
+.paginate_disabled_next,
+.paginate_enabled_next {
+	height: 19px;
+	float: left;
+	cursor: pointer;
+	cursor: pointer;
+	color: #111 !important;
+}
+.paginate_disabled_previous:hover,
+.paginate_enabled_previous:hover,
+.paginate_disabled_next:hover,
+.paginate_enabled_next:hover {
+	text-decoration: none !important;
+}
+.paginate_disabled_previous:active,
+.paginate_enabled_previous:active,
+.paginate_disabled_next:active,
+.paginate_enabled_next:active {
+	outline: none;
+}
+
+.paginate_disabled_previous,
+.paginate_disabled_next {
+	color: #666 !important;
+}
+.paginate_disabled_previous,
+.paginate_enabled_previous {
+	padding-left: 23px;
+}
+.paginate_disabled_next,
+.paginate_enabled_next {
+	padding-right: 23px;
+	margin-left: 10px;
+}
+
+.paginate_enabled_previous { background: url('images/back_enabled.png') no-repeat top left; }
+.paginate_enabled_previous:hover { background: url('images/back_enabled_hover.png') no-repeat top left; }
+.paginate_disabled_previous { background: url('images/back_disabled.png') no-repeat top left; }
+
+.paginate_enabled_next { background: url('images/forward_enabled.png') no-repeat top right; }
+.paginate_enabled_next:hover { background: url('images/forward_enabled_hover.png') no-repeat top right; }
+.paginate_disabled_next { background: url('images/forward_disabled.png') no-repeat top right; }
+
+
+/************BOTTONI***************/
+
+/* Full number pagination */
+.paging_full_numbers {
+	height: 50px;
+	line-height: 22px;
+        padding-top: 10px;
+}
+.paging_full_numbers a:active {
+	outline: none
+}
+.paging_full_numbers a:hover {
+	text-decoration: none;
+}
+
+.paging_full_numbers a.paginate_button,
+.paging_full_numbers a.paginate_active {
+
+	border: 1px solid #FF9400;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 2px 5px;
+	margin: 3px 3px;
+	cursor: pointer;
+	color: #15138A !important;//colore TESTO bottoni non selezionati 
+        
+        
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffbd63+0,ffbd63+50,ff9400+51,ff9400+100 */
+background: #ffbd63; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffbd63 0%, #ffbd63 50%, #ff9400 51%, #ff9400 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffbd63), color-stop(50%,#ffbd63), color-stop(51%,#ff9400), color-stop(100%,#ff9400)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffbd63 0%,#ffbd63 50%,#ff9400 51%,#ff9400 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffbd63 0%,#ffbd63 50%,#ff9400 51%,#ff9400 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffbd63 0%,#ffbd63 50%,#ff9400 51%,#ff9400 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffbd63 0%,#ffbd63 50%,#ff9400 51%,#ff9400 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffbd63', endColorstr='#ff9400',GradientType=0 ); /* IE6-9 */
+
+
+
+}
+
+/************BOTTONI***************/
+/*Sfondo bottoni non selezionati*/
+.paging_full_numbers a.paginate_button {
+	background: #ffbd63;
+        border: 1px solid #15138A;
+        color: #15138A !important;
+
+}
+
+/*Sfondo bottoni passaggio*/
+.paging_full_numbers a.paginate_button:hover {
+	text-decoration: none !important;
+        border: 1px solid #FF9400;        
+        background: #1D1AB2;/* passaggio bottoni*/
+        color: #fff !important;
+        
+}
+
+/*Sfondo bottoni selezionati*/
+.paging_full_numbers a.paginate_active {
+	background: #1D1AB2 ;
+        color: #fff !important;
+
+}
+
+
+/*
+ * Processing indicator
+ */
+.dataTables_processing {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 250px;
+	height: 30px;
+	margin-left: -125px;
+	margin-top: -15px;
+	padding: 14px 0 2px 0;
+	border: 1px solid #ddd;
+	text-align: center;
+	color: #999;
+	font-size: 14px;
+	background-color: white;
+}
+
+
+/*
+ * Sorting
+ */
+.sorting { background: url('images/sort_both.png') no-repeat center right; }
+.sorting_asc { background: url('images/sort_asc.png') no-repeat center right; }
+.sorting_desc { background: url('images/sort_desc.png') no-repeat center right; }
+
+.sorting_asc_disabled { background: url('images/sort_asc_disabled.png') no-repeat center right; }
+.sorting_desc_disabled { background: url('images/sort_desc_disabled.png') no-repeat center right; }
+ 
+table.dataTable thead th:active,
+table.dataTable thead td:active {
+	outline: none;
+}
+
+
+/*
+ * Scrolling
+ */
+.dataTables_scroll {
+	clear: both;
+}
+
+.dataTables_scrollBody {
+	/*margin-top: -1px;*/
+	-webkit-overflow-scrolling: touch;
+}
+

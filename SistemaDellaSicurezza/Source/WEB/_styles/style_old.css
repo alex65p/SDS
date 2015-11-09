@@ -1,0 +1,77 @@
+/**   ======================================================================== */
+/**                                                                            */
+/** @copyright Copyright (c) 2010-2015, S2S s.r.l. */
+/** @license   http://www.gnu.org/licenses/gpl-2.0.html GNU Public License v.2 */
+/** @version   6.0  */
+/** This file is part of SdS - Sistema della Sicurezza  . */
+/** SdS - Sistema della Sicurezza   is free software: you can redistribute it and/or modify */
+/** it under the terms of the GNU General Public License as published by  */
+/** the Free Software Foundation, either version 3 of the License, or  */
+/** (at your option) any later version.  */
+
+/** SdS - Sistema della Sicurezza  is distributed in the hope that it will be useful, */
+/** but WITHOUT ANY WARRANTY; without even the implied warranty of */
+/** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the */
+/** GNU General Public License for more details. */
+
+/** You should have received a copy of the GNU General Public License */
+/** along with SdS - Sistema della Sicurezza .  If not, see <http://www.gnu.org/licenses/gpl-2.0.html>  GNU Public License v.2 */
+/**                                                                            */
+/**   ======================================================================== */
+
+button.menu 
+{
+	background-color: #ffffcc;
+	border-color : #00b6b2;
+}
+body
+{
+	background-color: #cccccc;
+	font-family : Arial;
+	color : navy/*#4B0082*/;
+	font-size : 8px;
+}
+fieldset
+{
+	/*border :2 solid #00b6b2;*/
+	/*border :1px outset gray;*/
+}
+select
+{
+	background-color : #ffffcc;
+	border-color: #00b6b2;
+}
+.title
+{
+	font-family: Arial;
+	font-size : large;
+	text-align : center;
+	color : navy;
+	font-weight : bold;
+}
+td.cell
+{
+	background-color : #ffffcc;
+}
+td
+{
+	font-family : Arial;
+	color : navy;
+	font-size : x-small;
+}
+input
+{
+	background-color : #ffffcc;
+	border :1 solid  #00b6b2;
+}
+textarea
+{
+	background-color : #ffffcc;
+	border :1 solid  #00b6b2;
+}
+legend
+{
+	font-family : Arial;
+	color : navy;
+	font-size : x-small;
+}

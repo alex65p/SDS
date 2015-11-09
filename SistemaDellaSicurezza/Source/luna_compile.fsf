@@ -1,0 +1,96 @@
+[Settings]
+; ******* Source
+Source Folder=Z:\WEB\
+; ******* Target
+Target Folder=C:\_Tomcat\webapps\luna_compile\WEB\
+; ******* values for Lock Source: (0=No) (1=Yes)
+Lock Source=0
+; ******* values for Lock Target: (0=No) (1=Yes)
+Lock Target=0
+; ******* values for Continue even if sources/targets do not exist: (0=No) (1=Yes)
+Continue even if sources/targets do not exist=0
+; ******* values for Create sources/targets that do not exist: (0=No) (1=Yes)
+Create sources/targets that do not exist=0
+; ******* 
+Include Subfolders Flags=1
+; ******* values for Comparison Type: (0=Size and Timestamp) (1=CRC) (2=Both)
+Comparison Type=0
+; ******* values for Ignore 2 seconds difference: (0=No) (1=Yes)
+Ignore 2 seconds difference=0
+; ******* values for Ignore any second difference: (0=No) (1=Yes)
+Ignore any second difference=0
+; ******* values for Ignore 1 hour difference: (0=No) (1=Yes)
+Ignore 1 hour difference=0
+CRC Chunk Size in Bytes=0
+; ******* values for Ignore File Size: (0=No) (1=Yes)
+Ignore File Size=0
+; ******* values for Ignore Timestamp: (0=No) (1=Yes)
+Ignore Timestamp=0
+; ******* values for Default Synchronization Method: (0= ) (1=Simple Sync (No History)) (2=Replication (Augment)) (3=Replication (Refresh)) (4=Replication (Update)) (5=Replication (Update and Prune)) (6=Replication (Mirror)) (7=Advanced Sync (With History))
+Default Synchronization Method=0
+; ******* values for UnatSync: (0=No) (1=Yes)
+UnatSync=0
+Copy File Permissions=0
+Copy Folder Permissions=0
+Speed=100
+Copy Buffer=32768
+Flush Buffer=0
+; ******* Log File
+Log File=
+Empty Log=0
+Log File Size=0
+; ******* values for Monitor Conflicts: (0=No) (1=Yes)
+Monitor Conflicts=0
+; ******* Sync Tracking Database
+Sync Tracking Database=
+Sync Conflicts=0
+; ******* values for SCT: (0=No) (1=Yes)
+SCT=0
+; ******* values for NSC: (0=No) (1=Yes)
+NSC=0
+Source-Target Offset=0
+; ******* values for Try Copy In Use Files: (0=No) (1=Yes)
+Try Copy In Use Files=0
+; ******* values for Always Verify CRC: (0=No) (1=Yes)
+Always Verify CRC=0
+; ******* values for Priority Class: (0=Default) (1=Idle (recommended)) (2=Low) (3=Below Normal) (4=Normal) (5=Above Normal) (6=High) (7=Realtime)
+Priority Class=1
+; ******* values for Scripts Before: (0=No) (1=Yes)
+Scripts Before=0
+; ******* values for Scripts After: (0=No) (1=Yes)
+Scripts After=0
+; ******* Source Archive
+Source Archive Folder=
+; ******* Target Archive
+Target Archive Folder=
+; ******* values for Smart Archive: (0=No) (1=Yes)
+Smart Archive=0
+; ******* values for Archive Conflicts Only: (0=No) (1=Yes)
+Archive Conflicts Only=0
+Num. Copies=0
+Remove Days=0
+Append Path=0
+Max Archive Size=0
+DES=0
+; ******* 
+ComEnc String=
+[Filters]
+; ******* values for Exclude Hidden Files: (0=No) (1=Yes)
+Exclude Hidden Files=0
+; ******* values for Exclude System Files: (0=No) (1=Yes)
+Exclude System Files=0
+; ******* values for Exclude Read-Only Files: (0=No) (1=Yes)
+Exclude Read-Only Files=0
+; ******* 
+Exclude After Date=
+; ******* 
+Exclude Before Date=
+Exclude Days Ago=0
+Exclude Greater than bytes=0
+Exclude Smaller than bytes=0
+Num. of Filters=0
+[FiltersDirs]
+Num. of Filters=0
+[ArchiveFilters]
+Num. of Filters=0
+[ViceVersa Project - File Version 3.0.0]

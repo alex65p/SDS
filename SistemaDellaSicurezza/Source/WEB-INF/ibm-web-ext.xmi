@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webappext:WebAppExtension
+    additionalClassPath=""
+    autoLoadFilters="false"
+    autoRequestEncoding="true"
+    autoResponseEncoding="true"
+    defaultErrorPage=""
+    directoryBrowsingEnabled="false"
+    fileServingEnabled="true"
+    preCompileJSPs="false"
+    reloadInterval="3"
+    reloadingEnabled="true"
+    serveServletsByClassnameEnabled="true"
+    xmi:id="WebAppExtension"
+    xmi:version="2.0"
+    xmlns:webappext="webappext.xmi"
+    xmlns:webapplication="webapplication.xmi"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <webApp href="WEB-INF/web.xml#SDS_WebApp"/>
+    <jspAttributes name="jdkSourceLevel" value="15" xmi:id="JSPAttribute_1"/>
+    <jspAttributes name="keepgenerated" value="true" xmi:id="JSPAttribute_2"/>
+</webappext:WebAppExtension>

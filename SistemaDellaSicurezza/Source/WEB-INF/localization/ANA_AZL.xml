@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-16" ?> 
+<dataset>
+		<records>
+			<record key="HELLO">
+				<en>Hello</en>
+				<es>Halo</es>
+				<de>Come zu mir</de>
+			</record>
+	</records>
+</dataset>
+
+
+
+

@@ -1,0 +1,258 @@
+<project name="Webapp Precompilation" default="all" basedir="."> 
+
+<!--
+C:\ant\bin\ant refresh_all -Dtomcat.home=C:\tomcat-5.0.18 -Dwebapp.path=C:\tomcat-5.0.18\webapps\luna
+-->
+
+  <target name="delete_all">
+		<delete dir="./WEB-INF/src"/>
+		<delete dir="./WEB-INF/classes"/>
+		<delete dir="./_jars/SQLConfigurator/classes"/>
+		<delete dir="./_jars/Luna/classes"/>
+  </target>
+
+  <target name="jspc1"> 
+		<taskdef classname="org.apache.jasper.JspC" name="jasper2" > 
+			<classpath id="jspc.classpath"> 
+				<pathelement location="${java.home}/../lib/tools.jar"/> 
+				<fileset dir="../../bin"> 
+				<include name="*.jar"/> 
+				</fileset> 
+				<fileset dir="../../server/lib"> 
+				<include name="*.jar"/> 
+				</fileset> 
+				<fileset dir="../../common/lib"> 
+				<include name="*.jar"/> 
+				</fileset> 
+			</classpath> 
+		</taskdef> 
+		
+		<jasper2 
+					package="com.apconsulting.luna"
+					validateXml="false" 
+					uriroot="." 
+					webXmlFragment="./WEB-INF/web_servlet.xml"
+					outputDir="./WEB-INF/src" /> 
+  </target> 
+  
+  <target name="webxml_merge">
+     <delete file="./WEB-INF/web_new.xml"/>
+      <concat destfile="./WEB-INF/web_new.xml" append="true">
+         <filelist dir="./WEB-INF" files="web.xml"/>
+      </concat>
+
+    <replace file="./WEB-INF/web_new.xml" token="&lt;/web-app>" value=""/>
+
+      <concat destfile="./WEB-INF/web_new.xml" append="true">
+         <filelist dir="./WEB-INF" files="web_servlet.xml,web_footer.xml"/>
+      </concat>
+  </target>
+
+  <target name="jspc" depends="jspc1,webxml_merge">
+	
+  </target>
+  
+  <target name="purgen" >
+	
+	<replace dir="./WEB-INF/src/" value="">
+  		<include name="**/*.java"/>
+  		<replacetoken><![CDATA[out.write('\r');]]></replacetoken>
+	</replace>
+	<replace dir="./WEB-INF/src/" value="">
+  		<include name="**/*.java"/>
+  		<replacetoken><![CDATA[out.write('\n');]]></replacetoken>
+	</replace>
+	<replace dir="./WEB-INF/src/" value="">
+  		<include name="**/*.java"/>
+  		<replacetoken><![CDATA[out.write("\r\n\r\n");]]></replacetoken>
+	</replace>
+	<replace dir="./WEB-INF/src/" value="">
+  		<include name="**/*.java"/>
+  		<replacetoken><![CDATA[out.write("\r\n\r\n\r\n\r\n\r\n");]]></replacetoken>
+	</replace>
+	<replace dir="./WEB-INF/src/" value="">
+  		<include name="**/*.java"/>
+  		<replacetoken><![CDATA[out.write("\r\n\r\n\r\n\r\n\r\n\r\n");]]></replacetoken>
+	</replace>
+	<replace dir="./WEB-INF/src/" value="">
+  		<include name="**/*.java"/>
+  		<replacetoken><![CDATA[out.write("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n");]]></replacetoken>
+	</replace>
+	<replace dir="./WEB-INF/src/" value="">
+  		<include name="**/*.java"/>
+  		<replacetoken><![CDATA[out.write("\r\n\t\t");]]></replacetoken>
+	</replace>
+  </target>
+
+
+  <target name="compile">
+    <mkdir dir="./WEB-INF/classes"/>
+    <mkdir dir="./WEB-INF/lib"/>
+
+    <javac destdir="./WEB-INF/classes"
+           optimize="off"
+           debug="off" failonerror="true"
+           srcdir="./WEB-INF/src/" 
+	   excludes="**/*.smap">
+      
+      <include name="**" />
+      <exclude name="**/src/**" />
+      <exclude name="**/_005freports/**" />
+      <exclude name="**/*include/**" />
+      <exclude name="**/*Util_jsp.java" />
+      <exclude name="**/*Utils_jsp.java" />
+      <exclude name="**/*Obj_jsp.java" />
+      <exclude name="**/*ComboBox_jsp.java" />
+	  
+      <exclude name="**/*Employees_jsp*.java" />
+
+      <exclude name="**/ejebun*.java" />
+      <exclude name="**/acl*.java" />
+      <exclude name="tags/**" />
+      
+      <classpath>
+        <pathelement location="./WEB-INF/classes"/>
+        <fileset dir="./WEB-INF/lib">
+          <include name="*.jar"/>
+        </fileset>
+        <pathelement location="../../common/classes"/>
+        <fileset dir="../../common/lib">
+          <include name="*.jar"/>
+        </fileset>
+        <pathelement location="../../shared/classes"/>
+        <fileset dir="../../shared/lib">
+          <include name="*.jar"/>
+        </fileset>
+        <fileset dir="../../bin"> 
+          <include name="*.jar"/> 
+        </fileset> 
+      </classpath>
+    </javac>
+
+  </target>
+
+	<target name="lib">
+		<mkdir dir="./WEB-INF/lib"/>
+		
+		<jar destfile="./WEB-INF/lib/com.apconsulting.luna.web.jar"
+			basedir="./WEB-INF/classes"
+			includes="**"
+		/>
+	</target>
+
+	<target name="war" >
+		<delete file="./luna.war"/>
+
+		<war destfile="luna.war" webxml="./WEB-INF/web_new.xml" excludes="**/*.jsp">
+	
+				<webinf dir="./WEB-INF" >
+					<exclude name="**/src/**"/>
+					<exclude name="**/lib/**"/>
+					<exclude name="**/classes/**"/>
+					<exclude name="./*.xml"/>
+					<exclude name="*.xml"/>
+					<exclude name="**/*.bak"/>
+				</webinf>
+				 <fileset dir="./">
+				 	<exclude name="**/_db_sql/**"/>
+					<exclude name="**/_jars/**"/>
+ 					<exclude name="**/WEB-INF/**"/>
+					<exclude name="**/WEB/Reports/**"/>
+					<exclude name="**/WEB/src/**"/>
+					<exclude name="**/WEB/src/**"/>
+					<exclude name="**/luna_compile.fsf"/>
+					<exclude name="**/*.bak"/>
+					<exclude name="**/*.old"/>
+					<exclude name="**/*.jsp"/>
+					<exclude name="**/*.zip"/>
+					<exclude name="**/*.war"/>
+					<exclude name="**/*.xml"/>
+				 </fileset>
+ 				 <lib dir="./WEB-INF/lib"/>
+
+		</war>
+	</target>
+
+  <target name="compileZET">
+		<mkdir dir="./_jars/SQLConfigurator/classes"/>
+    <javac destdir="./_jars/SQLConfigurator/classes"
+           optimize="off"
+           debug="off" failonerror="true"
+           srcdir="./_jars/SQLConfigurator/src/" 
+	   excludes="**/*.smap">
+      
+      <include name="**" />
+      
+      <classpath>
+        <pathelement location="./WEB-INF/classes"/>
+        <fileset dir="./WEB-INF/lib">
+          <include name="*.jar"/>
+        </fileset>
+        <pathelement location="../../common/classes"/>
+        <fileset dir="../../common/lib">
+          <include name="*.jar"/>
+        </fileset>
+        <pathelement location="../../shared/classes"/>
+        <fileset dir="../../shared/lib">
+          <include name="*.jar"/>
+        </fileset>
+        <fileset dir="../../bin"> 
+          <include name="*.jar"/> 
+        </fileset> 
+      </classpath>
+    </javac>
+
+		<jar destfile="./WEB-INF/lib/zet.xml.configurator.jar"
+			basedir="./_jars/SQLConfigurator/classes"
+			includes="**"
+		/>
+  </target>
+
+  <target name="compileLuna">
+		<mkdir dir="./_jars/Luna/classes"/>
+    <mkdir dir="./WEB-INF/lib"/>
+
+    <javac destdir="./_jars/Luna/classes"
+           optimize="off"
+           debug="off" failonerror="true"
+           srcdir="./_jars/Luna/src/" 
+	   excludes="**/*.smap" deprecation="on">
+      
+      <include name="**" />
+      <classpath>
+        <pathelement location="./WEB-INF/classes"/>
+        <fileset dir="./WEB-INF/lib">
+          <include name="*.jar"/>
+        </fileset>
+        <pathelement location="../../common/classes"/>
+        <fileset dir="../../common/lib">
+          <include name="*.jar"/>
+        </fileset>
+        <pathelement location="../../shared/classes"/>
+        <fileset dir="../../shared/lib">
+          <include name="*.jar"/>
+        </fileset>
+        <fileset dir="../../bin"> 
+          <include name="*.jar"/> 
+        </fileset> 
+      </classpath>
+    </javac>
+
+		<jar destfile="./WEB-INF/lib/com.apconsulting.luna.jar"
+			basedir="./_jars/Luna/classes"
+			includes="**"
+		/>
+  </target>
+
+  <target name="all" depends="compileZET,compileLuna,jspc,compile,lib,war">
+  </target>
+
+ <target name="refresh" depends="compileZET,compileLuna,jspc,compile">
+  </target>
+
+ <target name="refresh_all" depends="compileZET,compileLuna,jspc,compile,lib,war">
+  </target>
+
+ <target name="rebuild_all" depends="delete_all,compileZET,compileLuna,jspc,compile,lib,war">
+  </target>
+</project>

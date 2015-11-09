@@ -1,0 +1,89 @@
+<%
+/*
+<file>
+  <versions>
+    <version number="1.0" date="16/01/2004" author="Pogrebnoy Yura">
+      <comments>
+
+				  <comment date="16/01/2004" author="Pogrebnoy Yura">
+				   <description>Chernovik vieW</description>
+				 </comment>
+				  <comment date="13/03/2004" author="Khomenko Juliya">
+				   <description>pereveden findAll -> view</description>
+				 </comment>
+      </comments>
+    </version>
+  </versions>
+</file>
+*/
+%>
+
+<html>
+<body>
+<%@ include file="../src/com/apconsulting/luna/util/Security.jsp" %>
+<%@ include file="../src/com/apconsulting/pseudoejb/EntityContextWrapper.jsp" %>
+<%@ include file="../src/com/apconsulting/pseudoejb/BMPEntityBean.jsp" %>
+<%@ include file="../src/com/apconsulting/pseudoejb/ContextWrapper.jsp" %>
+
+<%@ page import="com.apconsulting.luna.ejb.Ala.*" %>
+
+<%@ include file="../src/com/apconsulting/luna/util/Formatter.jsp" %>
+<%@ include file="../src/com/apconsulting/luna/conf/ApplicationConfigurator.jsp" %>
+<div id="divContent">
+<%
+IAlaHome aHome=(IAlaHome)PseudoContext.lookup("AlaBean");
+IAla Ala;
+%>
+	<table class="VIEW_TABLE" border=0>
+	<tr class="VIEW_HEADER_TR">
+		<td>&nbsp;<%=ApplicationConfigurator.LanguageManager.getString("Numero")%>&nbsp;</td>
+                <td>&nbsp;<%=ApplicationConfigurator.LanguageManager.getString("Nome")%>&nbsp;</td>
+                <td>&nbsp;<%=ApplicationConfigurator.LanguageManager.getString("Descrizione")%>&nbsp;</td>
+	</tr>
+<%
+Collection col = aHome.getAla_View();
+Iterator it = col.iterator();
+
+ int iCount=0;
+ while(it.hasNext()){
+     Ala_View view = (Ala_View)it.next();
+%>
+		<tr
+			class="VIEW_TR" valign="top"
+			INDEX="<%=view.COD_ALA%>" onclick="g_Handler.OnRowClick(this)" ondblclick="g_Handler.OnRowDblClick(this)"
+		>
+<% out.println("<td>&nbsp;"+ ++iCount +"&nbsp;</td><td>&nbsp;"+
+								 view.getNOM_ALA+"&nbsp;</td><td>&nbsp;"+
+								 Formatter.format(view.getDES_ALA)+"&nbsp;</td></tr>");
+ }
+%>
+	</table>
+
+</div>
+
+<script>
+
+	function OnBeforeDelete(id, tr){
+		return confirm(arraylng["MSG_0023"]);
+	}
+	function OnViewLoad(){
+			//alert("Loaded!!")
+
+			parent.g_Handler.setCaptionHTML("<%=ApplicationConfigurator.LanguageManager.getString("Anagrafica.ala")%>");
+
+			parent.g_Handler.New.URL="/luna/WEB/Form_ANA_ALA/ANA_ALA_Form.jsp";
+			parent.g_Handler.New.Width=55;
+			parent.g_Handler.New.Height=25;
+
+			parent.g_Handler.Open=parent.g_Handler.New;
+
+			parent.g_Handler.Delete.URL="/luna/WEB/Form_ANA_ALA/ANA_ALA_Delete.jsp"; //?ID=32233223
+			parent.g_Handler.Delete.OnBefore=OnBeforeDelete;
+	}
+</script>
+
+<script>
+	//alert("Ready")
+	parent.g_Handler.OnViewChange(divContent, OnViewLoad);
+	//InitView();
+</script>

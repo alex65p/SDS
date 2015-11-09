@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="changeme" default="all" basedir=".">
+    <target name="all">
+        <!-- TODO define script. See Help menu or http://ant.apache.org/ -->
+    </target>
+    <target name="jspc1"> 
+        <taskdef classname="org.apache.jasper.JspC" name="jasper2" > 
+            <classpath id="jspc.classpath"> 
+                <pathelement location="${java.home}/../lib/tools.jar"/> 
+                <fileset dir="../../bin"> 
+                    <include name="*.jar"/> 
+                </fileset> 
+                <fileset dir="../../server/lib"> 
+                    <include name="*.jar"/> 
+                </fileset> 
+                <fileset dir="../../common/lib"> 
+                    <include name="*.jar"/> 
+                </fileset> 
+            </classpath> 
+        </taskdef> 
+        <jasper2 
+            package="com.apconsulting.luna"
+            validateXml="false" 
+            uriroot="." 
+            webXmlFragment="./WEB-INF/web_servlet.xml"
+            outputDir="./WEB-INF/src" /> 
+		
+                
+    </target> 
+</project>

@@ -1,0 +1,24 @@
+<%@ page import="s2s.luna.reports.Report_REP_LUO_FSC" %>
+<%@ page import="s2s.luna.conf.ApplicationConfigurator" %>
+
+<%@ include file="../../../src/com/apconsulting/pseudoejb/EntityContextWrapper.jsp" %>
+<%@ include file="../../../src/com/apconsulting/pseudoejb/BMPEntityBean.jsp" %>
+<%@ include file="../../../src/com/apconsulting/pseudoejb/ContextWrapper.jsp" %>
+
+<%@ include file="../../../src/com/apconsulting/luna/util/Security.jsp"%>
+<%@ include file="../../../_include/Checker.jsp" %>
+<%
+Checker c = new Checker();
+long lCOD_LUO_FSC=c.checkLong(ApplicationConfigurator.LanguageManager.getString("Luogo.fisico"), request.getParameter("ID"), true);
+if ( c.isError){
+	%>
+		<html><body>
+			<h2><%=c.printErrors()%></h2>
+		</body></html>
+	<%
+	return;
+}
+out.clearBuffer();
+Report_REP_LUO_FSC report = new Report_REP_LUO_FSC(lCOD_LUO_FSC);
+report.doReport(request, response);
+%>

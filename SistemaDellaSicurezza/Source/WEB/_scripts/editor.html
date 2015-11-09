@@ -1,0 +1,122 @@
+<!--   ======================================================================== -->
+<!--                                                                            -->
+<!-- @copyright Copyright (c) 2010-2015, S2S s.r.l. -->
+<!-- @license   http://www.gnu.org/licenses/gpl-2.0.html GNU Public License v.2 -->
+<!-- @version   6.0  -->
+<!-- This file is part of SdS - Sistema della Sicurezza  . -->
+<!-- SdS - Sistema della Sicurezza   is free software: you can redistribute it and/or modify -->
+<!-- it under the terms of the GNU General Public License as published by  -->
+<!-- the Free Software Foundation, either version 3 of the License, or  -->
+<!-- (at your option) any later version.  -->
+
+<!-- SdS - Sistema della Sicurezza  is distributed in the hope that it will be useful, -->
+<!-- but WITHOUT ANY WARRANTY; without even the implied warranty of -->
+<!-- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the -->
+<!-- GNU General Public License for more details. -->
+
+<!-- You should have received a copy of the GNU General Public License -->
+<!-- along with SdS - Sistema della Sicurezza .  If not, see <http://www.gnu.org/licenses/gpl-2.0.html>  GNU Public License v.2 -->
+<!--                                                                            -->
+<!--   ======================================================================== -->
+
+<html>
+<head>
+	<title>Editor</title>
+</head>
+
+
+<style>
+.editor{
+    width:100%;
+    height:100%;	
+    border:0px solid red;
+}
+.editorTab{
+	width:100%;
+	height:100%;	
+}       
+.txtArea{
+	width:100%;
+	height:100%;	
+}
+.search{
+	display:none;
+	width:400px;
+	height:200px;
+	position:absolute;
+	top:200px;
+}
+</style>
+</HEAD>
+
+<BODY BGCOLOR="white">
+	<div class="editor">
+		<table class="editorTab" id="text"  border="0">
+		  <tr>
+		    <td height="100%" colspan="3">
+		    	<textarea id="txtArea" class="txtArea"></textarea>
+		    </td>
+		  </tr>
+		  <tr><td colspan="3"></td></tr>
+		  <tr>
+		    <td align="right"><input type="button" value="Ok" onclick="onOk()"> </td>
+		    <td align="left"><input type="button" value="Annulla" onclick="onAnnula()"> </td>
+		    <td align="center"><input type="button" value="Cerca" onclick="onSearch()"> </td>
+		  </tr>
+		</table>
+	</div>
+
+	<div id="search" class="search">
+		<table>
+			<tr><td colspan="100%">Cerca/Sostituisci</td></tr>
+			<tr>
+				<td>Cerca:&nbsp;</td><td><input type="text" id="searchText"></td>
+			</tr>
+			<tr>
+				<td>Sostituisci con:&nbsp;</td><td><input type="text" id="replaceText"></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<table>
+						<tr>
+							<td><input type="button" value="Annulla" onclick="closeSearch()"></td>
+							<td><input type="button" value="Cerca" onclick=""></td>
+							<td><input type="button" value="Sostituisci" onclick=""></td>
+							<td><input type="button" value="Sostituisci tutto" onclick=""></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</div>
+<script language="JavaScript">
+	function onSearch(){
+		search.style.display="inline";			
+	}
+	function onAnnula(){
+		window.returnValue="CANCEL";
+		window.close();
+	}
+	function onOk(){
+		if (window.dialogArguments){
+			
+			window.dialogArguments.value = document.all["txtArea"].value;   
+			window.returnValue="OK";
+			window.close();
+		}	
+	}
+	function getText(){
+		if (window.dialogArguments){
+			document.all["txtArea"].value = window.dialogArguments.value;
+		}
+	}
+	function closeSearch(){
+		search.style.display="none";
+		searchText.value="";
+		replaceText.value="";
+	}
+	document.body.onload=getText;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+/**   ======================================================================== */
+/**                                                                            */
+/** @copyright Copyright (c) 2010-2015, S2S s.r.l. */
+/** @license   http://www.gnu.org/licenses/gpl-2.0.html GNU Public License v.2 */
+/** @version   6.0  */
+/** This file is part of SdS - Sistema della Sicurezza  . */
+/** SdS - Sistema della Sicurezza   is free software: you can redistribute it and/or modify */
+/** it under the terms of the GNU General Public License as published by  */
+/** the Free Software Foundation, either version 3 of the License, or  */
+/** (at your option) any later version.  */
+
+/** SdS - Sistema della Sicurezza  is distributed in the hope that it will be useful, */
+/** but WITHOUT ANY WARRANTY; without even the implied warranty of */
+/** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the */
+/** GNU General Public License for more details. */
+
+/** You should have received a copy of the GNU General Public License */
+/** along with SdS - Sistema della Sicurezza .  If not, see <http://www.gnu.org/licenses/gpl-2.0.html>  GNU Public License v.2 */
+/**                                                                            */
+/**   ======================================================================== */
+
+BODY
+{
+    font-size: 8px;
+    color: #1D1AB2;
+    font-family: Tahoma, Verdana, Segoe, sans-serif; 
+    background-color: #fff;
+}
+
+TABLE.VIEW_TABLE
+{
+    color:#fff;  
+    border: #0E0C6C 1px solid;
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff ;/*#1D1AB2;*/
+    
+}
+
+TR.VIEW_HEADER_TR
+{
+    border-top: #FF9400 double;/*    border-top: #0E0C6C 1px inset;*/
+    border-bottom: #FF9400 double;/*    border-bottom: #0E0C6C 1px inset;*/
+    padding: 0px;
+    margin: 0px;
+    background-color: #1D1AB2;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;  
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;   
+    
+
+}
+TR.VIEW_TR
+{
+    font-weight: bold;
+    font-size: 12px;
+    cursor:pointer;
+    color:#000;
+    font-family: Tahoma, Verdana, Segoe, sans-serif; 
+    background-color: #ffffcc;
+}
+
+TR.VIEW_TR_SELECTED
+{
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    color: #395173;
+    font-family: Tahoma, Verdana, Segoe, sans-serif; 
+    background-color: #d7d6e6;
+}
+TR.dataTrSelected
+{
+    font-weight: bold;
+    font-size: 12px;
+    color: #d7d6e6;
+    font-family: Tahoma, Verdana, Segoe, sans-serif; 
+    background-color: #536384;
+}
+
+H2
+{
+    
+
+    border-top: #FF9400 double;
+    border-bottom: #FF9400 double;
+    /*font-weight: bold;*/
+    font-size: medium;
+    text-transform: uppercase; 
+    color: #ffffff;
+    font-style: normal;
+    font-family: Tahoma, Verdana, Segoe, sans-serif; 
+    background-color: #15138A;
+    text-align: left;
+    font-variant: small-caps;
+    margin-top: 10px
+}
+
+
+BUTTON
+{
+    border: medium none;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+}
+.invisible
+{
+    display: none;
+}
+DIV {}

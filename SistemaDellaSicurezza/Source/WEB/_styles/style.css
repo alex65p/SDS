@@ -1,0 +1,313 @@
+/**   ======================================================================== */
+/**                                                                            */
+/** @copyright Copyright (c) 2010-2015, S2S s.r.l. */
+/** @license   http://www.gnu.org/licenses/gpl-2.0.html GNU Public License v.2 */
+/** @version   6.0  */
+/** This file is part of SdS - Sistema della Sicurezza  . */
+/** SdS - Sistema della Sicurezza   is free software: you can redistribute it and/or modify */
+/** it under the terms of the GNU General Public License as published by  */
+/** the Free Software Foundation, either version 3 of the License, or  */
+/** (at your option) any later version.  */
+
+/** SdS - Sistema della Sicurezza  is distributed in the hope that it will be useful, */
+/** but WITHOUT ANY WARRANTY; without even the implied warranty of */
+/** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the */
+/** GNU General Public License for more details. */
+
+/** You should have received a copy of the GNU General Public License */
+/** along with SdS - Sistema della Sicurezza .  If not, see <http://www.gnu.org/licenses/gpl-2.0.html>  GNU Public License v.2 */
+/**                                                                            */
+/**   ======================================================================== */
+
+/*colori dell'help, schermata selezione azienda, schermata del record selezionato */
+
+BODY
+{
+    font-size: 12px;
+    color: #191970;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    background-color: #fff;/*#fffcdb #FFFEF6;*/
+}
+
+
+TABLE
+{
+    background-color: #fff;/*#FFFEF6 #ffedd6;*/
+}
+
+
+
+/* bordino delle diverse tabelle e dell'help'*/
+FIELDSET
+{
+    border: #FF9400 3px  double;/* #0E0C6C ;*/
+    font-size: 12px;
+    font-weight: bold;
+    color: #C57200;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+
+}
+
+LEGEND  /*#ffedd6*/
+{
+    font-size: 12px;
+    font-weight: bold;
+    color: #C57200;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+
+
+fieldset.stimaRischio/*ignoto*/
+{
+    margin-top:5px;
+    margin-bottom:5px;
+    border-color:#cc0033;
+    border-style:double;
+    border-width:4px;
+}
+
+legend.stimaRischio/*ignoto*/
+{
+    padding:0.2em 0.5em;
+    border:1px solid green;
+    border-color:#cc00cc;
+    font-size:90%;
+    text-align:right;    
+}
+
+
+input.stimaRischio/*ignoto*/
+{
+    font-size: 15px;
+    background-color: #CCCCCC;
+    border: 1px solid #666666;
+}
+
+
+.title /*titolo della tabella*/ 
+{
+        border-right: #FF9400;
+    border-top: #FF9400 double;
+    border-left: #FF9400;
+    border-bottom: #FF9400 double;
+    /*font-weight: bold;*/
+    font-size: medium;
+    text-transform: uppercase; 
+    color: #ffffff;
+    font-style: normal;
+    font-family: Tahoma, Verdana, Segoe, sans-serif; 
+    background-color: #1D1AB2;
+    text-align: left;
+    font-variant: small-caps;      
+    font-size: 22px;
+
+}
+
+.title_warning
+{
+    border-right: #FF0000;
+    border-top: #FF0000 double;
+    border-left: #FF0000;
+    border-bottom: #FF0000 double;
+    /*FONT-WEIGHT: bold;*/
+    font-size:  14px;
+    text-transform: uppercase;
+    color: #000;
+    text-indent: 5px;
+    font-style: normal;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    text-align: left;
+    font-variant: normal;
+    background-color: #000099;
+}
+
+.title_error
+{
+    
+    border-right: #000099;
+    border-top:  #000099 double;
+    border-left:  #000099;
+    border-bottom:  #000099 double;
+    /*FONT-WEIGHT: bold;*/
+    font-size:  22px;
+    text-transform: uppercase;
+    color: #000000;
+    text-indent: 5px;
+    font-style: normal;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    text-align: left;
+    font-variant: normal;
+    background-color: #FF0000;
+}
+
+
+
+
+
+TD.cell
+{
+    background-color: #536384;
+}
+
+TD
+{
+    font-size: 12px;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+INPUT
+{
+    border: groove;
+    font-size: 12px;
+    color: #000000;
+    border-top: thin groove;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    background-color: #ffffff
+}
+
+INPUT.checkbox
+{
+    border: 0px;
+    background-color: transparent;
+}
+
+BUTTON.menu
+{
+    border-color: #00b6b2;
+    background-color: #ffffcc;
+
+}
+
+
+TEXTAREA
+{
+    resize: none;
+    font-size:  12px;
+    overflow: auto;
+    border-style: groove;
+    border-width: thin medium medium;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    height: 70px;
+    resize: both;
+    max-width: 450px;
+    max-height: 200px;
+    background-color: #FFF;
+    color: #000000;
+    text-align: left;
+}
+
+
+SELECT
+{
+    border:  thin groove #1D1AB2;
+    font-size:  12px;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    background-color: #FFF;
+}
+
+
+
+
+
+TD BUTTON.getList
+{
+    border-style: ridge;
+    border: 1px;
+    font-weight: bold;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px
+}
+
+
+FORM
+{
+    margin: 0px
+}
+.debug
+{
+    display: none
+}
+VIEW_TABLE
+{
+    font-size:12px;
+    cursor: pointer;
+}
+divTable.td
+{
+    color: #fff;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+TD.tdToolBar
+{
+    background-color: #000099;
+}
+BUTTON
+{
+    border-right: medium none;
+    border-top: medium none;
+    border-left: medium none;
+    width: 25px;
+    border-bottom: medium none;
+    height: 25px;
+    background-color: transparent
+}
+.invisible
+{
+    display: none
+}
+DIV{}
+
+RADIO
+{
+    background-color: #000099;
+}
+
+
+a{
+    text-decoration: none; 
+    
+} 
+
+
+A:link {
+    font-family: Tahoma, Verdana, Segoe, sans-serif; 
+    font-weight: bold;
+    font-size: 12px;    
+    text-decoration: none; 
+    color: #1D1AB2;
+}
+
+A:visited {
+    font-family: Tahoma, Verdana, Segoe, sans-serif; 
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none; 
+    color: #1D1AB2;
+}
+
+A:active {
+    font-family: Tahoma, Verdana, Segoe, sans-serif; 
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none; 
+    color: #FF9400;
+}
+
+
+A:hover {
+    font-family: Tahoma, Verdana, Segoe, sans-serif; 
+    font-weight: bold;
+    font-size: 12px;   
+    text-decoration: none; 
+    color: #FF9400;
+}
+
+.LINK {
+    font-family: Tahoma, Verdana, Segoe, sans-serif; 
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none; 
+    color: #1D1AB2;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webappbnd:WebAppBinding
+        virtualHostName="default_host"
+        xmi:id="WebAppBinding"
+        xmi:version="2.0"
+        xmlns:common="common.xmi"
+        xmlns:commonbnd="commonbnd.xmi"
+        xmlns:webappbnd="webappbnd.xmi"
+        xmlns:webapplication="webapplication.xmi"
+        xmlns:xmi="http://www.omg.org/XMI">
+
+    <resRefBindings jndiName="jdbc/luna" xmi:id="ResourceReferenceBinding_SDS_DataSource">
+        <bindingResourceRef href="WEB-INF/web.xml#SDS_DataSource"/>
+    </resRefBindings>
+
+    <webapp href="WEB-INF/web.xml#SDS_WebApp"/>
+</webappbnd:WebAppBinding>

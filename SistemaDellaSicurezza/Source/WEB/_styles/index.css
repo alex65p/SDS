@@ -1,0 +1,207 @@
+/**   ======================================================================== */
+/**                                                                            */
+/** @copyright Copyright (c) 2010-2015, S2S s.r.l. */
+/** @license   http://www.gnu.org/licenses/gpl-2.0.html GNU Public License v.2 */
+/** @version   6.0  */
+/** This file is part of SdS - Sistema della Sicurezza  . */
+/** SdS - Sistema della Sicurezza   is free software: you can redistribute it and/or modify */
+/** it under the terms of the GNU General Public License as published by  */
+/** the Free Software Foundation, either version 3 of the License, or  */
+/** (at your option) any later version.  */
+
+/** SdS - Sistema della Sicurezza  is distributed in the hope that it will be useful, */
+/** but WITHOUT ANY WARRANTY; without even the implied warranty of */
+/** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the */
+/** GNU General Public License for more details. */
+
+/** You should have received a copy of the GNU General Public License */
+/** along with SdS - Sistema della Sicurezza .  If not, see <http://www.gnu.org/licenses/gpl-2.0.html>  GNU Public License v.2 */
+/**                                                                            */
+/**   ======================================================================== */
+
+BODY/*sfondo generale dell'appilcazione*/
+{
+    font-family: Tahoma, Verdana, Segoe, sans-serif; 
+    background-color: #fff;//#FFFEF6 #fffcdb;
+}
+
+TABLE
+{
+    border-right: medium none;
+    border-top: medium none;
+    border-left: medium none;
+    border-bottom: medium none
+}
+
+/* titolo tabella pagina pricnipale*/
+.VIEW_HEADER_TR
+{
+    font-family: Tahoma, Verdana, Segoe, sans-serif; 
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none; 
+    background-color: #1D1AB2;  /* va ripetuto anche in jquery.dataTable.css-->table.dataTable thead th*/
+    border-top: #0E0C6C 1px inset;
+    border-bottom: #0E0C6C 1px inset;
+
+}
+
+
+
+/* tabella lavoratore cessato*/
+.VIEW_TR_DIP_CESSATO
+{
+    font-family: Tahoma, Verdana, Segoe, sans-serif; 
+    font-weight: bold;
+    font-size: 12px;
+    color: #FF0000;
+    /*background-color:  #eee8aa;*/
+    cursor:pointer;
+
+}
+
+
+
+/* titolo del percorso che vi vede quando si sleziona una voce di menu*/
+.h2
+{
+
+    border-top: #FF9400 double;
+    border-bottom: #FF9400 double;
+    font-weight: bold;
+    font-size: medium;
+    text-transform: uppercase; 
+    color: #ffffff;
+    font-style: normal;
+    font-family: Tahoma, Verdana, Segoe, sans-serif; //Zimqvist;
+    background-color: #15138A;
+    text-align: left;
+    font-variant: small-caps;
+} 
+
+
+
+.VIEW_TR/*tabella x*/
+{
+    font-family: Tahoma, Verdana, Segoe, sans-serif; 
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none; 
+    color: #0E0C6C ;
+    background-color: #ffedd6;   // #ececec #ffedd6 #E9E0D3;
+    cursor:pointer;  
+    /*border: #496384 30px solid;*/  
+}
+
+
+/*tabella X*/
+.VIEW_TABLE
+{
+    border: #0E0C6C 1px solid;
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff ;
+}
+
+
+
+/* non so dove vengono usate*/
+.VIEW_TR_SELECTED
+{
+    cursor: pointer;
+    color: #395173;
+    background-color: #33ffff
+}
+
+/* non so dove vengono usate*/
+BUTTON
+{
+    border-right: medium none;
+    border-top: medium none;
+    border-left: medium none;
+    width: 25px;
+    border-bottom: medium none;
+    height: 25px
+}
+
+/* non so dove vengono usate*/
+.invisible
+{
+    display: none
+}
+
+
+
+/*nel logon vien usato ma non si vede*/
+H2
+{
+    border-top: #496384 1px solid;
+    border-bottom: #496384 1px solid;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #a7b7ce;
+    text-indent: 5px;
+    font-family: Tahoma, Verdana, Segoe, sans-serif; 
+    background-color: #000099;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+
+DIV{}
+
+td.check4List
+{
+    background-image: url(_images/check_medium.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+a{
+    text-decoration: none; 
+    
+} 
+
+
+A:link {
+    font-family: Tahoma, Verdana, Segoe, sans-serif; 
+    font-weight: bold;
+    font-size: 12px;    
+    text-decoration: none; 
+    color: #1D1AB2;
+}
+
+A:visited {
+    font-family: Tahoma, Verdana, Segoe, sans-serif; 
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none; 
+    color: #1D1AB2;
+}
+
+A:active {
+    font-family: Tahoma, Verdana, Segoe, sans-serif; 
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none; 
+    color: #FF9400;
+}
+
+
+A:hover {
+    font-family: Tahoma, Verdana, Segoe, sans-serif; 
+    font-weight: bold;
+    font-size: 12px;   
+    text-decoration: none; 
+    color: #FF9400;
+}
+
+.LINK {
+    font-family: Tahoma, Verdana, Segoe, sans-serif; 
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none; 
+    color: #1D1AB2;
+}

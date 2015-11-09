@@ -1,0 +1,211 @@
+/**   ======================================================================== */
+/**                                                                            */
+/** @copyright Copyright (c) 2010-2015, S2S s.r.l. */
+/** @license   http://www.gnu.org/licenses/gpl-2.0.html GNU Public License v.2 */
+/** @version   6.0  */
+/** This file is part of SdS - Sistema della Sicurezza  . */
+/** SdS - Sistema della Sicurezza   is free software: you can redistribute it and/or modify */
+/** it under the terms of the GNU General Public License as published by  */
+/** the Free Software Foundation, either version 3 of the License, or  */
+/** (at your option) any later version.  */
+
+/** SdS - Sistema della Sicurezza  is distributed in the hope that it will be useful, */
+/** but WITHOUT ANY WARRANTY; without even the implied warranty of */
+/** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the */
+/** GNU General Public License for more details. */
+
+/** You should have received a copy of the GNU General Public License */
+/** along with SdS - Sistema della Sicurezza .  If not, see <http://www.gnu.org/licenses/gpl-2.0.html>  GNU Public License v.2 */
+/**                                                                            */
+/**   ======================================================================== */
+
+/*CSS DEL MENU*/
+
+BODY {/* posiziona correttamente il menu non toglierlo*/
+    margin-left: 0mm;
+    margin-right: 0mm;
+    border: 0px outset;
+}
+
+/* menu non selezionato*/
+.MenuBarItem {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#15138a+0,1d1ab2+46,403eb7+55,403eb7+100 */
+background: #15138a; /* Old browsers */
+background: -moz-linear-gradient(top,  #15138a 0%, #1d1ab2 46%, #403eb7 55%, #403eb7 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#15138a), color-stop(46%,#1d1ab2), color-stop(55%,#403eb7), color-stop(100%,#403eb7)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #15138a 0%,#1d1ab2 46%,#403eb7 55%,#403eb7 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #15138a 0%,#1d1ab2 46%,#403eb7 55%,#403eb7 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #15138a 0%,#1d1ab2 46%,#403eb7 55%,#403eb7 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #15138a 0%,#1d1ab2 46%,#403eb7 55%,#403eb7 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15138a', endColorstr='#403eb7',GradientType=0 ); /* IE6-9 */
+    
+    color:#ffffff;/* colore del testo*/
+    cursor: default;   
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 8pt;
+    font-style: normal;
+    font-weight: bold;
+    height: 12px;
+    margin: 1px;
+    vertical-align: top;
+    border: 2px;
+    border-style: double;
+    border-color: #615FC5 #403EB7;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /*border-radius: 10px 10px; */
+    -moz-border-radius: 10px; /* firefox */
+    -webkit-border-radius: 10px; /* safari, chrome */
+    -khtml-border-radius:10px;margin:10px;
+    
+}
+
+
+
+/* colore delle voci di menu quando selezionate */
+.MenuBarItemSel{ 
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff9400+0,ffac39+34,ffac39+59,ffbd63+100 */
+background: #ff9400; /* Old browsers */
+background: -moz-linear-gradient(top,  #ff9400 0%, #ffac39 34%, #ffac39 59%, #ffbd63 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff9400), color-stop(34%,#ffac39), color-stop(59%,#ffac39), color-stop(100%,#ffbd63)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ff9400 0%,#ffac39 34%,#ffac39 59%,#ffbd63 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ff9400 0%,#ffac39 34%,#ffac39 59%,#ffbd63 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ff9400 0%,#ffac39 34%,#ffac39 59%,#ffbd63 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ff9400 0%,#ffac39 34%,#ffac39 59%,#ffbd63 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9400', endColorstr='#ffbd63',GradientType=0 ); /* IE6-9 */
+
+    color: #1D1AB2;/* colore del testo*/
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 10pt;
+    font-style: normal;
+    font-weight: bold;
+    height: 12px;       
+    margin: 1px;
+    vertical-align: top;
+    border: 2px;
+    border-style: double;
+    border-color: #C57200 #9B5A00;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    //border-radius: 10px 10px; 
+    -moz-border-radius: 10px; /* firefox */
+    -webkit-border-radius: 10px; /* safari, chrome */
+    -khtml-border-radius:10px;margin:10px;
+   
+}
+
+.Invisible {
+    display: none;
+}
+
+/* colore dietro al menu*/
+.MenuBar {
+    position:absolute;
+    left:0; top:0; width:100%; 
+    margin:0 0 0 0;
+    /*border: #FF9400 1px solid;*/
+    background-color: #ffffff; /* #FFF263;*/
+    height:22px;
+}
+
+
+
+/* contenitore del sottomenu*/
+.menuBorder1
+{
+    left: -1000px;
+    top: -1000px;
+    visibility: visible;
+    margin-top: 5px;
+    margin-left: -5px;
+    position: absolute;    
+    border: 2px;
+    border-style: double;
+    border-color: #C57200 #C57200;       
+    background-color: #FFAC39;
+}
+
+/* contenitore del contenitore del sottomenu*/
+.menuBorder2
+{
+    background-color: #FFAC39;
+    left: 0px;
+    top: 0px;
+    margin: 5px 0px;
+    cursor: default;
+    position: absolute;
+   
+}
+
+
+#MENUINSERT
+{
+    left: 5px;/* posizone sottomenu*/
+    width: 0px;
+    position: absolute;
+    top: 0px;
+    height: 0px
+}
+
+.menuTable{}
+
+
+/* colore sottomenu quando non selezionato*/
+.menuRow
+{
+    background-color: transparent;
+    cursor: default;
+    height: 16pt;
+    color:#1D1AB2;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 11pt;
+    font-weight: normal;
+}
+
+/*colore delle voci di menu al passaggio*/
+.menuRowSel
+{
+    background-color: #1D1AB2;
+    cursor: default;
+    height: 13pt;
+    color: #ffffff;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 11pt;
+    font-style: normal;
+    font-weight: initial;
+    
+}
+
+/* resto ignoto*/
+.menuImageCell
+{
+    cursor: default;
+    text-align: left
+}
+
+.menuCaptionCell
+{
+    cursor: default;
+    text-align: left
+}
+
+.menuArrowCell
+{
+    font-size: 8pt;
+    cursor: default;
+    text-align: right
+}
+
+
+
+SELECT.My
+{
+    color:  rgba(255,172, 57,1);
+    font-style: oblique;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    text-decoration: underline overline line-through
+}
+
+.disabled{}
+
+

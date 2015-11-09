@@ -1,0 +1,21 @@
+Interface: zet.xml.configurator.XMLConfiguratorMMBean
+MBean:     zet.xml.configurator.XMLConfiguratorM
+
+<attribute name="JNDIName">JNDI imia po kotoromu vizivaetsia configurator</attribute>
+<attribute name="Path">C:\_Tomcat\webapps\luna\Web-inf\sql</attribute>
+<attribute name="Tag">postgres</attribute>
+
+
+//-------------------------------------------------------------------------------------
+
+Interface: zet.mbeans.jndi.JNDIBinderMMBean
+MBean:     zet.mbeans.jndi.JNDIBinderM
+
+<attribute name="JNDIName">JNDI imia po kotoromu vizivaetsia binder</attribute>
+<attribute name="Boolean">true</attribute>
+<attribute name="Byte">1</attribute>
+
+
+
+
+

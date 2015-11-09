@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context crossContext="true" debug="5" docBase="luna" path="/sds" reloadable="true">
+    <Logger className="org.apache.catalina.logger.FileLogger" prefix="localhost_luna_log." suffix=".txt" timestamp="true"/>
+    <!--
+        - Il tag "Resource" corrisponde al tag "resource-ref" nel web.xml.
+        - Il tag "Environment" corrisponde al tag "env-entry" nel web.xml.
+    -->
+    <!--    JDBC Realm, procedura di login di Tomcat    -->
+    <!--
+    <Realm
+        className="org.apache.catalina.realm.JDBCRealm" 
+        connectionName="sgsl" 
+        connectionPassword="sgsl" 
+        connectionURL="jdbc:postgresql://192.168.0.34:5432/SDS-SVILUPPO"
+        debug="99" 
+        driverName="org.postgresql.Driver" 
+        roleNameCol="ROLE" 
+        userCredCol="PASSWORD" 
+        userNameCol="LOGIN" 
+        userRoleTable="VIEW_SC_USER_ROLES" 
+        userTable="VIEW_SC_USERS"/>
+    -->
+    <!--    *****************************************   -->
+    <!--    *       CONFIGURAZIONI DATABASE         *   -->
+    <!--    *****************************************   -->
+    <!--    *****************************************   -->
+    <!--    *   PostGreeSQL - db-server - ESERCIZIO *   -->
+    <!--    *****************************************   -->
+   
+    <!--    Connessione al DB   -->
+    <Resource auth="Container" description="Postgres DB Connection" driverClassName="org.postgresql.Driver" 
+              factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory" maxActive="100" maxIdle="30" maxWait="1000" 
+              type="javax.sql.DataSource" 
+              url="jdbc:postgresql://localhost:5432/SDS-ESERCIZIO"
+              name="jdbc/ESERCIZIO" 
+              password="postgres"
+              username="postgres"/>
+    <!--    Tipo di database   -->
+    <Environment name="DatabaseType_ESERCIZIO" override="false" type="java.lang.Byte" value="0"/>
+    <!--    *********************************************   -->
+    <!--    *   PostGreeSQL - db-server - DEMO          *   -->
+    <!--    *********************************************   -->
+    <!--    Connessione al DB   -->
+    <Resource auth="Container" description="Postgres DB Connection" driverClassName="org.postgresql.Driver" 
+              factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory" maxActive="100" maxIdle="30" maxWait="1000" 
+              type="javax.sql.DataSource"
+              url="jdbc:postgresql://localhost:5432/SDS-DEMO" 
+              name="jdbc/DEMO"
+              password="postgres" 
+              username="postgres"/>
+    <!--    Tipo di database   -->
+    <Environment name="DatabaseType_DEMO" override="false" type="java.lang.Byte" value="0"/>
+  
+    <!--    *************************************   -->
+    <!--    *   PostGreeSQL - db-server - TEST  *   -->
+    <!--    *************************************   -->
+    <!--    Connessione al DB   -->
+    <Resource auth="Container" description="Postgres DB Connection" driverClassName="org.postgresql.Driver" 
+              factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory" maxActive="100" maxIdle="30" maxWait="1000"
+              type="javax.sql.DataSource" 
+              url="jdbc:postgresql://localhost:5432/SDS-TEST"
+              name="jdbc/TEST" 
+              password="postgres"
+              username="postgres"/>
+    <!--    Tipo di database   -->
+    <Environment name="DatabaseType_TEST" override="false" type="java.lang.Byte" value="0"/>
+  
+    <!--    *****************************************   -->
+    <!--    *   PostGreeSQL - db-server - SVILUPPO  *   -->
+    <!--    *****************************************   -->
+    <!--    Connessione al DB   -->
+    <Resource auth="Container" 
+            description="Postgres DB Connection" 
+            driverClassName="org.postgresql.Driver" 
+            factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory" 
+            maxActive="100" maxIdle="30" maxWait="1000" 
+            type="javax.sql.DataSource"
+            url="jdbc:postgresql://localhost:5432/SDS-SVILUPPO" 
+            name="jdbc/SVILUPPO" 
+            password="postgres" 
+            username="postgres"/>
+    <!--    Tipo di database   -->
+    <Environment name="DatabaseType_SVILUPPO" override="false" type="java.lang.Byte" value="0"/>
+    <!--    *************************************************   -->
+    <!--    *   PostGreeSQL - db-server - Default (luna)   *   -->
+    <!--    *************************************************   -->
+    <!--    Connessione al DB   -->
+    <Resource auth="Container" description="Postgres DB Connection" driverClassName="org.postgresql.Driver" 
+            factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory" maxActive="100" maxIdle="30" maxWait="1000" 
+            type="javax.sql.DataSource" 
+            url="jdbc:postgresql://localhost:5432/S2S"
+            name="jdbc/luna" 
+            password="postgres"
+            username="postgres"/>
+    <!--    Tipo di database   -->
+    <Environment name="DatabaseType_luna" override="false" type="java.lang.Byte" value="0"/>
+    <!--    *   PostGreeSQL - db-server - SVILUPPO (luna)   *   --> 
+    
+    
+    <!--    ***************************************   -->
+    <!--    *   Oracle 10g - locale - SVILUPPO    *   -->
+    <!--    ***************************************  -->
+    <!--    Connessione al DB   -->
+    <Resource auth="Container" description="Oracle DB Connection" driverClassName="oracle.jdbc.driver.OracleDriver" 
+              factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory" maxActive="100" maxIdle="30" maxWait="1000" 
+              type="javax.sql.DataSource" 
+              url="jdbc:oracle:thin:@localhost:1522:XE" 
+              name="jdbc/ORACLE_locale" 
+              password="SDS" 
+              username="SDS"/>
+    <!--    Tipo di database   -->
+    <Environment name="DatabaseType_ORACLE_locale" override="false" type="java.lang.Byte" value="1"/>
+    <!--    *   Oracle 10g - locale - SVILUPPO    *   -->
+  
+    <!--    *********************************   -->
+    <!--    *   DB2 - db-server - SVILUPPO  *   -->
+    <!--    *********************************   -->
+    <!--    Connessione al DB   -->
+    <Resource auth="Container" description="DB2 DB Connection" driverClassName="com.ibm.db2.jcc.DB2Driver" 
+              factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory" maxActive="100" maxIdle="30" maxWait="1000" 
+              type="javax.sql.DataSource" 
+              url="jdbc:db2://localhost:64000/LUNA"
+              name="jdbc/DB2" 
+              password="db2admin" 
+              username="db2admin"/>
+    <!--    Tipo di database   -->
+    <Environment name="DatabaseType_DB2" override="false" type="java.lang.Byte" value="3"/>
+  <!--    *   DB2 - db-server - SVILUPPO  *   --> 
+  
+  
+  
+  
+  
+    <!--    *****************************************************   -->
+    <!--    *       CONFIGURAZIONI INTERNAZIONALIZZAZIONI       *   -->
+    <!--    *****************************************************   -->
+    <!--    ITALIANO    -->
+    <Resource auth="Container" factory="s2s.SQLConfigurator.zet.xml.configurator.XMLConfiguratorFactory" name="helper/LangConfig_IT" path="WEB-INF/localization" tag="it" type="s2s.SQLConfigurator.zet.xml.configurator.XMLConfigurator"/>
+    <!--    INGLESE     -->
+    <Resource auth="Container" factory="s2s.SQLConfigurator.zet.xml.configurator.XMLConfiguratorFactory" name="helper/LangConfig_EN" path="WEB-INF/localization" tag="en" type="s2s.SQLConfigurator.zet.xml.configurator.XMLConfigurator"/>
+</Context>

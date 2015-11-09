@@ -1,0 +1,561 @@
+awm300
+"C:\Beatrice 626\nuovo Menu\menu"
+menu.js
+""
+""
+ 0 
+
+ 0 
+ 0 
+-1 
+
+[EndParams]
+[Menu Tree]
+ 0 
+!Main Menu!
+M0
+!626 !,0,0,0,0,30,250,0,1000,1,0,0,1,n,0,1,,4,0,sans-serif,14px,0,0,0,#FFFFFF,#5B5B5B,none,2,n,#FFF2CC,n,outset,2,#FFF2CC,3,0,0,n,n,100,0,[awmEM]
+M0
+!Gestione!
+I1
+!Gestione!,!Gestione!,!Gestione!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,outset,outset,outset,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,n,n,n,0,2,2,2,[awmEI]
+I1
+! Gestione!
+S9
+! Gestione!,1,0,-4,2,0,0,0,0,n,0,0,,4,0,sans-serif,14px,0,0,0,#FFFFFF,#5B5B5B,none,2,n,#FFF2CC,n,outset,2,#FFF2CC,3,0,0,n,n,100,[awmES]
+S9
+!Lista Aziende!
+I10
+!Lista Aziende!,!Lista Aziende!,!Lista Aziende!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href= 'Form_MULTIAZIENDA/MULTIAZIENDA_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S9
+!Accessi!
+I288
+!Accessi!,!Accessi!,!Accessi!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,n,n,n,0,2,2,2,[awmEI]
+I288
+!Accessi!
+S289
+!Accessi!,1,0,-4,2,0,0,0,0,n,0,0,,4,0,sans-serif,14px,0,0,0,#FFFFFF,#5B5B5B,none,2,n,#FFF2CC,n,outset,2,#FFF2CC,3,0,0,n,n,100,[awmES]
+S289
+!Consulente!
+I290
+!Consulente!,!Consulente!,!Consulente!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_COU/ANA_COU_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S289
+!Utenze!
+I291
+!Utenze!,!Utenze!,!Utenze!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_UTN/ANA_UTN_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S289
+!Ruoli!
+I292
+!Ruoli!,!Ruoli!,!Ruoli!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_RUO/ANA_RUO_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+M0
+!Azienda!
+I2
+!Azienda!,!Azienda!,!Azienda!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,outset,outset,outset,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,n,n,n,0,2,2,2,[awmEI]
+I2
+!Azienda!
+S4
+!Azienda!,1,0,-4,2,0,0,0,0,n,0,0,,4,0,sans-serif,14px,0,0,0,#FFFFFF,#5B5B5B,none,2,n,#FFF2CC,n,outset,2,#FFF2CC,3,0,0,n,n,100,[awmES]
+S4
+!Dati Anagrafici!
+I5
+!Dati Anagrafici!,!Dati Anagrafici!,!Dati Anagrafici!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_AZL/ANA_AZL_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S4
+!Fornitori!
+I6
+!Fornitori!,!Fornitori!,!Fornitori!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href= 'Form_ANA_FOR/ANA_FOR_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S4
+!Lavoratori!
+I7
+!Lavoratori!,!Lavoratori!,!Lavoratori!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href= 'Form_ANA_DPD/ANA_DPD_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S4
+!Distribuzione territoralie!
+I13
+!Distribuzione territoralie!,!Distribuzione territoralie!,!Distribuzione territoralie!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,n,n,n,1,2,2,2,[awmEI]
+I13
+!Distribuzione territoralie!
+S14
+!Distribuzione territoralie!,1,0,-4,2,0,0,0,0,n,0,0,,4,0,sans-serif,14px,0,0,0,#FFFFFF,#5B5B5B,none,2,n,#FFF2CC,n,outset,2,#FFF2CC,3,0,0,n,n,100,[awmES]
+S14
+!Sedi!
+I15
+!Sedi!,!Sedi!,!Sedi!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_SIT_AZL/ANA_SIT_AZL_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+S14
+!Luoghi Fisici!
+I16
+!Luoghi Fisici!,!Luoghi Fisici!,!Luoghi Fisici!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_LUO_FSC/ANA_LUO_FSC_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+S14
+!Immobili!
+I17
+!Immobili!,!Immobili!,!Immobili!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_IMO/ANA_IMO_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+S14
+!Ali!
+I18
+!Ali!,!Ali!,!Ali!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_ALA/ANA_ALA_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+S14
+!Piani!
+I19
+!Piani!,!Piani!,!Piani!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_PNO/ANA_PNO_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+S4
+!Organizzazione!
+I11
+!Organizzazione!,!Organizzazione!,!Organizzazione!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,n,n,n,1,2,2,2,[awmEI]
+I11
+!Organizzazione!
+S20
+!Organizzazione!,1,0,-4,2,0,0,0,0,n,0,0,,4,0,sans-serif,14px,0,0,0,#FFFFFF,#5B5B5B,none,2,n,#FFF2CC,n,outset,2,#FFF2CC,3,0,0,n,n,100,[awmES]
+S20
+!Tipologie Unità Organizzative!
+I21
+!Tipologie Unità Organizzative!,!Tipologie Unità Organizzative!,!Tipologie Unità Organizzative!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_TPL_UNI_ORG/TPL_UNI_ORG_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+S20
+!Gestione Unità Organizzativa!
+I22
+!Gestione Unità Organizzativa!,!Gestione Unità Organizzativa!,!Gestione Unità Organizzativa!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_UNI_ORG/ANA_UNI_ORG_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+S20
+!Ruoli Aziendali!
+I24
+!Ruoli Aziendali!,!Ruoli Aziendali!,!Ruoli Aziendali!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_FUZ_AZL/ANA_FUZ_AZL_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+S20
+!Unità di Sicurezza!
+I25
+!Unità di Sicurezza!,!Unità di Sicurezza!,!Unità di Sicurezza!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_UNI_SIC/ANA_UNI_SIC_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+S20
+!Mansioni!
+I26
+!Mansioni!,!Mansioni!,!Mansioni!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_OPE_SVO/ANA_OPE_SVO_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+S20
+!Operazioni Svolte!
+I27
+!Operazioni Svolte!,!Operazioni Svolte!,!Operazioni Svolte!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_MAN/ANA_MAN_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+S20
+!Fornitori Personale/Servizi!
+I31
+!Fornitori Personale/Servizi!,!Fornitori Personale/Servizi!,!Fornitori Personale/Servizi!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_DTE/ANA_DTE_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+S4
+!Macchinari!
+I12
+!Macchinari!,!Macchinari!,!Macchinari!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,n,n,n,1,2,2,2,[awmEI]
+I12
+!Macchinari!
+S34
+!Macchinari!,1,0,-4,2,0,0,0,0,n,0,0,,4,0,sans-serif,14px,0,0,0,#FFFFFF,#5B5B5B,none,2,n,#FFF2CC,n,outset,2,#FFF2CC,3,0,0,n,n,100,[awmES]
+S34
+!Tipologie Macchine Attrezzature!
+I35
+!Tipologie Macchine Attrezzature!,!Tipologie Macchine Attrezzature!,!Tipologie Macchine Attrezzature!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_TPL_MAC/TPL_MAC_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+S34
+!Macchine!
+I36
+!Macchine!,!Macchine!,!Macchine!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_MAC/ANA_MAC_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+S34
+!Attività Manutenzione/Sostituzione!
+I37
+!Attività Manutenzione/Sostituzione!,!Attività Manutenzione/Sostituzione!,!Attività Manutenzione/Sostituzione!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_ATI_MNT_MAC/ANA_ATI_MNT_MAC_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+M0
+!Agenti Chimici!
+I3
+!Agenti Chimici!,!Agenti Chimici!,!Agenti Chimici!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,outset,outset,outset,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,n,n,n,0,2,2,2,[awmEI]
+I3
+!Agenti Chimici!
+S45
+!Agenti Chimici!,1,0,-4,2,0,0,0,0,n,0,0,,4,0,sans-serif,14px,0,0,0,#FFFFFF,#5B5B5B,none,2,n,#FFF2CC,n,outset,2,#FFF2CC,3,0,0,n,n,100,[awmES]
+S45
+!Frasi R!
+I47
+!Frasi R!,!Frasi R!,!Frasi R!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_FRS_R/ANA_FRS_R_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+S45
+!Frasi S!
+I48
+!Frasi S!,!Frasi S!,!Frasi S!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_FRS_S/ANA_FRS_S_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+S45
+!Classificazione!
+I49
+!Classificazione!,!Classificazione!,!Classificazione!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_CLF_SOS/ANA_CLF_SOS_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+S45
+!Caratteristiche Chimico/Fisiche!
+I50
+!Caratteristiche Chimico/Fisiche!,!Caratteristiche Chimico/Fisiche!,!Caratteristiche Chimico/Fisiche!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_SOS_CHI/ANA_SOS_CHI_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+M0
+!Rischi!
+I38
+!Rischi!,!Rischi!,!Rischi!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,outset,outset,outset,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,n,n,n,1,2,2,2,[awmEI]
+I38
+!Rischi!
+S83
+!Rischi!,1,0,-4,2,0,0,0,0,n,0,0,,4,0,sans-serif,14px,0,0,0,#FFFFFF,#5B5B5B,none,2,n,#FFF2CC,n,outset,2,#FFF2CC,3,0,0,n,n,100,[awmES]
+S83
+!Categorie Fattori di Rischio!
+I84
+!Categorie Fattori di Rischio!,!Categorie Fattori di Rischio!,!Categorie Fattori di Rischio!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_CAG_FAT_RSO/CAG_FAT_RSO_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+S83
+!Fattori di Rischio!
+I87
+!Fattori di Rischio!,!Fattori di Rischio!,!Fattori di Rischio!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_FAT_RSO/ANA_FAT_RSO_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+S83
+!Rischi!
+I86
+!Rischi!,!Rischi!,!Rischi!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_RSO/ANA_RSO_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+M0
+!Strumenti di Controllo dei Rischi!
+I39
+!Strumenti di Controllo dei Rischi!,!Strumenti di Controllo dei Rischi!,!Strumenti di Controllo dei Rischi!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,outset,outset,outset,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,n,n,n,1,2,2,2,[awmEI]
+I39
+!Strumenti di Controllo dei Rischi!
+S89
+!Strumenti di Controllo dei Rischi!,1,0,-4,2,0,0,0,0,n,0,0,,4,0,sans-serif,14px,0,0,0,#FFFFFF,#5B5B5B,none,2,n,#FFF2CC,n,outset,2,#FFF2CC,3,0,0,n,n,100,[awmES]
+S89
+!Misure di Prevenzione e Protezione!
+I90
+!Misure di Prevenzione e Protezione!,!Misure di Prevenzione e Protezione!,!Misure di Prevenzione e Protezione!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_MIS_PET/ANA_MIS_PET_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+S89
+!Perizie!
+I93
+!Perizie!,!Perizie!,!Perizie!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_MIS_PET_AZL/ANA_MIS_PET_AZL_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+S89
+!D.P.I.!
+I189
+!D.P.I.!,!D.P.I.!,!D.P.I.!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,n,n,n,1,2,2,2,[awmEI]
+I189
+!D.P.I.!
+S269
+!D.P.I.!,1,0,-4,2,0,0,0,0,n,0,0,,4,0,sans-serif,14px,0,0,0,#FFFFFF,#5B5B5B,none,2,n,#FFF2CC,n,outset,2,#FFF2CC,3,0,0,n,n,100,[awmES]
+S269
+!Tipologie!
+I270
+!Tipologie!,!Tipologie!,!Tipologie!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_TPL_DPI/TPL_DPI_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S269
+!Lotti!
+I271
+!Lotti!,!Lotti!,!Lotti!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_LOT_DPI/ANA_LOT_DPI_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S269
+!Schede di Intervento!
+I272
+!Schede di Intervento!,!Schede di Intervento!,!Schede di Intervento!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_SCH_INR_DPI/SCH_INR_DPI_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+M0
+!D.V.R.!
+I40
+!D.V.R.!,!D.V.R.!,!D.V.R.!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,outset,outset,outset,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,n,n,n,1,2,2,2,[awmEI]
+I40
+!D.V.R.!
+S102
+!D.V.R.!,1,0,-4,2,0,0,0,0,n,0,0,,4,0,sans-serif,14px,0,0,0,#FFFFFF,#5B5B5B,none,2,n,#FFF2CC,n,outset,2,#FFF2CC,3,0,0,n,n,100,[awmES]
+S102
+!Sezioni!
+I103
+!Sezioni!,!Sezioni!,!Sezioni!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href= 'Form_ANA_ARE/ANA_ARE_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+S102
+!Capitoli!
+I104
+!Capitoli!,!Capitoli!,!Capitoli!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,none,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href= 'Form_ANA_CPL/ANA_CPL_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+S102
+!Paragrafi!
+I106
+!Paragrafi!,!Paragrafi!,!Paragrafi!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_PRG/ANA_PRG_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+S102
+!Documenti di Valutazione dei Rischi!
+I105
+!Documenti di Valutazione dei Rischi!,!Documenti di Valutazione dei Rischi!,!Documenti di Valutazione dei Rischi!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_DOC_VLU/ANA_DOC_VLU_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+M0
+!Verifiche Sanitarie!
+I41
+!Verifiche Sanitarie!,!Verifiche Sanitarie!,!Verifiche Sanitarie!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,outset,outset,outset,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,n,n,n,1,2,2,2,[awmEI]
+I41
+!Verifiche Sanitarie!
+S117
+!Verifiche Sanitarie!,1,0,-4,2,0,0,0,0,n,0,0,,4,0,sans-serif,14px,0,0,0,#FFFFFF,#5B5B5B,none,2,n,#FFF2CC,n,outset,2,#FFF2CC,3,0,0,n,n,100,[awmES]
+S117
+!Visite Mediche!
+I119
+!Visite Mediche!,!Visite Mediche!,!Visite Mediche!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_VST_MED/ANA_VST_MED_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+S117
+!Visite di Idoneità!
+I118
+!Visite di Idoneità!,!Visite di Idoneità!,!Visite di Idoneità!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_VST_IDO/ANA_VST_IDO_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+S117
+!Gestione cartelle Cliniche!
+I123
+!Gestione cartelle Cliniche!,!Gestione cartelle Cliniche!,!Gestione cartelle Cliniche!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_CTL_SAN/ANA_CTL_SAN_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+S117
+!Gestione Protocolli!
+I122
+!Gestione Protocolli!,!Gestione Protocolli!,!Gestione Protocolli!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_PRO_SAN/ANA_PRO_SAN_View.jsp?_Refresh=1',n,n,1,2,2,2,[awmEI]
+M0
+!Documenti!
+I42
+!Documenti!,!Documenti!,!Documenti!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,outset,outset,outset,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,n,n,n,1,2,2,2,[awmEI]
+I42
+!Documenti!
+S129
+!Documenti!,1,0,-4,2,0,0,0,0,n,0,0,,4,0,sans-serif,14px,0,0,0,#FFFFFF,#5B5B5B,none,2,n,#FFF2CC,n,outset,2,#FFF2CC,3,0,0,n,n,100,[awmES]
+S129
+!Tipologie!
+I130
+!Tipologie!,!Tipologie!,!Tipologie!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_TPL_DOC/TPL_DOC_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S129
+!Cetegorie!
+I132
+!Cetegorie!,!Cetegorie!,!Cetegorie!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_CAG_DOC/CAG_DOC_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S129
+!Documenti/Versioni!
+I131
+!Documenti/Versioni!,!Documenti/Versioni!,!Documenti/Versioni!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_DOC/ANA_DOC_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S129
+!Normative!
+I273
+!Normative!,!Normative!,!Normative!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,n,n,n,0,2,2,2,[awmEI]
+I273
+!Normative!
+S274
+!Normative!,1,0,-4,2,0,0,0,0,n,0,0,,4,0,sans-serif,14px,0,0,0,#FFFFFF,#5B5B5B,none,2,n,#FFF2CC,n,outset,2,#FFF2CC,3,0,0,n,n,100,[awmES]
+S274
+!Settori!
+I275
+!Settori!,!Settori!,!Settori!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_SET/ANA_SET_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S274
+!SottoSettori!
+I276
+!SottoSettori!,!SottoSettori!,!SottoSettori!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_SOT_SET/ANA_SOT_SET_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S274
+!Organi!
+I277
+!Organi!,!Organi!,!Organi!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_ORN/ANA_ORN_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S274
+!Tipologie!
+I278
+!Tipologie!,!Tipologie!,!Tipologie!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_TPL_NOR_SEN/TPL_NOR_SEN_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S274
+!Norme/Sentenze!
+I279
+!Norme/Sentenze!,!Norme/Sentenze!,!Norme/Sentenze!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_NOR_SEN/ANA_NOR_SEN_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+M0
+!Formazione del Personale!
+I43
+!Formazione del Personale!,!Formazione del Personale!,!Formazione del Personale!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,outset,outset,outset,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,n,n,n,1,2,2,2,[awmEI]
+I43
+!Formazione del Personale!
+S133
+!Formazione del Personale!,1,0,-4,2,0,0,0,0,n,0,0,,4,0,sans-serif,14px,0,0,0,#FFFFFF,#5B5B5B,none,2,n,#FFF2CC,n,outset,2,#FFF2CC,3,0,0,n,n,100,[awmES]
+S133
+!Corsi!
+I134
+!Corsi!,!Corsi!,!Corsi!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_INR_ADT/ANA_INR_ADT_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+I134
+!Corsi!
+S280
+!Corsi!,1,0,-4,2,0,0,0,0,n,0,0,,4,0,sans-serif,14px,0,0,0,#FFFFFF,#5B5B5B,none,2,n,#FFF2CC,n,outset,2,#FFF2CC,3,0,0,n,n,100,[awmES]
+S280
+!Tipologia!
+I281
+!Tipologia!,!Tipologia!,!Tipologia!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_TPL_COR/TPL_COR_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S280
+!Lista Corsi!
+I282
+!Lista Corsi!,!Lista Corsi!,!Lista Corsi!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_COR/ANA_COR_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S280
+!Erogazione!
+I283
+!Erogazione!,!Erogazione!,!Erogazione!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_SCH_EGZ_COR/SCH_EGZ_COR_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S133
+!Test di Verifica!
+I136
+!Test di Verifica!,!Test di Verifica!,!Test di Verifica!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_NON_CFO/ANA_NON_CFO_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+I136
+!Test di Verifica!
+S284
+!Test di Verifica!,1,0,-4,2,0,0,0,0,n,0,0,,4,0,sans-serif,14px,0,0,0,#FFFFFF,#5B5B5B,none,2,n,#FFF2CC,n,outset,2,#FFF2CC,3,0,0,n,n,100,[awmES]
+S284
+!Lista Test di Verifica!
+I285
+!Lista Test di Verifica!,!Lista Test di Verifica!,!Lista Test di Verifica!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_TES_VRF/ANA_TES_VRF_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S284
+!Domande!
+I286
+!Domande!,!Domande!,!Domande!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_DMD/ANA_DMD_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S284
+!Risposte!
+I287
+!Risposte!,!Risposte!,!Risposte!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_RST/ANA_RST_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S133
+!Percorsi Formativi!
+I135
+!Percorsi Formativi!,!Percorsi Formativi!,!Percorsi Formativi!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_PCS_FRM/ANA_PCS_FRM_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S133
+!Debito Formativo!
+I137
+!Debito Formativo!,!Debito Formativo!,!Debito Formativo!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_SCH_DBT_FRM/SCH_DBT_FRM_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+M0
+!Infortuni!
+I225
+!Infortuni!,!Infortuni!,!Infortuni!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,outset,outset,outset,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,n,n,n,0,2,2,2,[awmEI]
+I225
+!Infortuni!
+S227
+!Infortuni!,1,0,-4,2,0,0,0,0,n,0,0,,4,0,sans-serif,14px,0,0,0,#FFFFFF,#5B5B5B,none,2,n,#FFF2CC,n,outset,2,#FFF2CC,3,0,0,n,n,100,[awmES]
+S227
+!Sedi Lesioni!
+I228
+!Sedi Lesioni!,!Sedi Lesioni!,!Sedi Lesioni!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_SED_LES/ANA_SED_LES_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S227
+!Nature Lesioni!
+I229
+!Nature Lesioni!,!Nature Lesioni!,!Nature Lesioni!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_NAT_LES/ANA_NAT_LES_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S227
+!Categorie Agenti Materiali!
+I230
+!Categorie Agenti Materiali!,!Categorie Agenti Materiali!,!Categorie Agenti Materiali!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_CAG_AGE_MAT/CAG_AGE_MAT_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S227
+!Agenti Materiali!
+I231
+!Agenti Materiali!,!Agenti Materiali!,!Agenti Materiali!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_AGE_MAT/ANA_AGE_MAT_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S227
+!Forme di Infortunio!
+I232
+!Forme di Infortunio!,!Forme di Infortunio!,!Forme di Infortunio!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_TPL_FRM_INO/TPL_FRM_INO_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S227
+!Accertamenti!
+I233
+!Accertamenti!,!Accertamenti!,!Accertamenti!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_TPL_INO/TPL_INO_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S227
+!Lista Infortuni!
+I234
+!Lista Infortuni!,!Lista Infortuni!,!Lista Infortuni!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_INO/ANA_INO_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+M0
+!Presidi Antincendio!
+I235
+!Presidi Antincendio!,!Presidi Antincendio!,!Presidi Antincendio!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,outset,outset,outset,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,n,n,n,0,2,2,2,[awmEI]
+I235
+!Presidi Antincendio!
+S236
+!Presidi Antincendio!,1,0,-4,2,0,0,0,0,n,0,0,,4,0,sans-serif,14px,0,0,0,#FFFFFF,#5B5B5B,none,2,n,#FFF2CC,n,outset,2,#FFF2CC,3,0,0,n,n,100,[awmES]
+S236
+!Categorie!
+I237
+!Categorie!,!Categorie!,!Categorie!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_CAG_PSD_ACD/CAG_PSD_ACD_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S236
+!Presidi!
+I238
+!Presidi!,!Presidi!,!Presidi!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_PSD_ACD/ANA_PSD_ACD_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S236
+!Schede di Intervento!
+I239
+!Schede di Intervento!,!Schede di Intervento!,!Schede di Intervento!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_SCH_INR_PSD/SCH_INR_PSD_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+M0
+!Verifiche S.P.P.!
+I240
+!Verifiche S.P.P.!,!Verifiche S.P.P.!,!Verifiche S.P.P.!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,outset,outset,outset,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,n,n,n,0,2,2,2,[awmEI]
+I240
+!Verifiche S.P.P.!
+S241
+!Verifiche S.P.P.!,1,0,-4,2,0,0,0,0,n,0,0,,4,0,sans-serif,14px,0,0,0,#FFFFFF,#5B5B5B,none,2,n,#FFF2CC,n,outset,2,#FFF2CC,3,0,0,n,n,100,[awmES]
+S241
+!Audit!
+I242
+!Audit!,!Audit!,!Audit!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_INR_ADT/ANA_INR_ADT_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S241
+!Non Conformità!
+I243
+!Non Conformità!,!Non Conformità!,!Non Conformità!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_NON_CFO/ANA_NON_CFO_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S241
+!Segnalazioni!
+I244
+!Segnalazioni!,!Segnalazioni!,!Segnalazioni!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_ANA_SGZ/ANA_SGZ_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S241
+!R.A.C./R.A.P.!
+I245
+!R.A.C./R.A.P.!,!R.A.C./R.A.P.!,!R.A.C./R.A.P.!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_AZN_CRR_PET/AZN_CRR_PET_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S241
+!A.C/A.P!
+I246
+!A.C/A.P!,!A.C/A.P!,!A.C/A.P!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_GEST_AZN_CRR_PET/GEST_AZN_CRR_PET_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+M0
+!Analisi e Controllo!
+I247
+!Analisi e Controllo!,!Analisi e Controllo!,!Analisi e Controllo!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,outset,outset,outset,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,n,n,n,0,2,2,2,[awmEI]
+I247
+!Analisi e Controllo!
+S248
+!Analisi e Controllo!,1,0,-4,2,0,0,0,0,n,0,0,,4,0,sans-serif,14px,0,0,0,#FFFFFF,#5B5B5B,none,2,n,#FFF2CC,n,outset,2,#FFF2CC,3,0,0,n,n,100,[awmES]
+S248
+!Verifiche Sanitarie!
+I249
+!Verifiche Sanitarie!,!Verifiche Sanitarie!,!Verifiche Sanitarie!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_SCH_VST/SCH_VST_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S248
+!Misure di Prevenzione e Protezione!
+I250
+!Misure di Prevenzione e Protezione!,!Misure di Prevenzione e Protezione!,!Misure di Prevenzione e Protezione!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_SCH_MIS_PET/SCH_MIS_PET_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S248
+!Perizie!
+I251
+!Perizie!,!Perizie!,!Perizie!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_SCH_MIS_PET_AZL/SCH_MIS_PET_AZL_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S248
+!Audit!
+I252
+!Audit!,!Audit!,!Audit!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_SCH_INR_ADT/SCH_INR_ADT_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S248
+!Formazione del Personale!
+I253
+!Formazione del Personale!,!Formazione del Personale!,!Formazione del Personale!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_SCH_COR/SCH_COR_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S248
+!Documenti!
+I254
+!Documenti!,!Documenti!,!Documenti!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_SCH_DOC/SCH_DOC_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S248
+!Rischi!
+I255
+!Rischi!,!Rischi!,!Rischi!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_SCH_RIV_RSO/SCH_RIV_RSO_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S248
+!Segnalazioni!
+I256
+!Segnalazioni!,!Segnalazioni!,!Segnalazioni!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_SCH_ADT/SCH_ADT_View.jsp?_Refresh=1',n,n,0,2,2,2,[awmEI]
+S248
+!Manutenzione!
+I257
+!Manutenzione!,!Manutenzione!,!Manutenzione!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,n,n,n,0,2,2,2,[awmEI]
+I257
+!Manutenzione!
+S258
+!Manutenzione!,1,0,-4,2,0,0,0,0,n,0,0,,4,0,sans-serif,14px,0,0,0,#FFFFFF,#5B5B5B,none,2,n,#FFF2CC,n,outset,2,#FFF2CC,3,0,0,n,n,100,[awmES]
+S258
+!Presidi Antincendio!
+I259
+!Presidi Antincendio!,!Presidi Antincendio!,!Presidi Antincendio!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_SCH_PSD_ACD/SCH_PSD_ACD_View.jsp?_Refresh=1&SCH_PSD_ACD=M',n,n,0,2,2,2,[awmEI]
+S258
+!Macchinari!
+I260
+!Macchinari!,!Macchinari!,!Macchinari!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_SCH_MAC/SCH_MAC_View.jsp?_Refresh=1&FROM=MAN',n,n,0,2,2,2,[awmEI]
+S258
+!D.P.I.!
+I261
+!D.P.I.!,!D.P.I.!,!D.P.I.!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_SCH_DPI/SCH_DPI_View.jsp?_Refresh=1&FROM=M',n,n,0,2,2,2,[awmEI]
+M0
+!Sostituzione!
+I262
+!Sostituzione!,!Sostituzione!,!Sostituzione!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,outset,outset,outset,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,n,n,n,0,2,2,2,[awmEI]
+I262
+!Sostituzione!
+S263
+!Sostituzione!,1,0,-4,2,0,0,0,0,n,0,0,,4,0,sans-serif,14px,0,0,0,#FFFFFF,#5B5B5B,none,2,n,#FFF2CC,n,outset,2,#FFF2CC,3,0,0,n,n,100,[awmES]
+S263
+!Presidi Antincendio!
+I266
+!Presidi Antincendio!,!Presidi Antincendio!,!Presidi Antincendio!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_SCH_PSD_ACD/SCH_PSD_ACD_View.jsp?_Refresh=1&SCH_PSD_ACD=S',n,n,0,2,2,2,[awmEI]
+S263
+!Macchinari!
+I267
+!Macchinari!,!Macchinari!,!Macchinari!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_SCH_MAC/SCH_MAC_View.jsp?_Refresh=1&FROM=SOS',n,n,0,2,2,2,[awmEI]
+S263
+!D.P.I.!
+I268
+!D.P.I.!,!D.P.I.!,!D.P.I.!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,frameView.document.location.href='Form_SCH_DPI/SCH_DPI_View.jsp?_Refresh=1&FROM=S',n,n,0,2,2,2,[awmEI]
+M0
+!?!
+I176
+!?!,!?!,!?!,1,1,1,n,n,n,0,0,0,0,0,0,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,C:\Programmi\AllWebMenus3\gallery\Selection Underlined-images\underselect_sub_over.gif,outset,outset,outset,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,n,n,n,0,2,2,2,[awmEI]
+I176
+!?!
+S177
+!?!,1,0,-4,2,0,0,0,0,n,0,0,,4,0,sans-serif,14px,0,0,0,#FFFFFF,#5B5B5B,none,2,n,#FFF2CC,n,outset,2,#FFF2CC,3,0,0,n,n,100,[awmES]
+S177
+!Help!
+I178
+!Help!,!Help!,!Help!,1,1,1,n,n,n,0,0,0,0,1,1,,1,0,0,0,Tahoma,Tahoma,Tahoma,14px,14px,14px,0,0,0,0,0,0,0,0,0,#000000,#000000,#000000,n,n,n,none,outset,none,1,1,1,n,n,n,n,#000080,#008080,n,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,C:\PROGRAMMI\ALLWEBMENUS3\gallery\Selection Animated-images\animselect.gif,!!,n,n,n,n,n,0,2,2,2,[awmEI]

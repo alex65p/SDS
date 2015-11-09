@@ -1,0 +1,153 @@
+body
+{
+	background-color: #3CB371; /*3CB371 #D7D6E6; 395173*/
+	font-family : Tahoma;
+	color : #32445C;
+	font-size : 8px;
+}
+
+button.menu 
+{
+	background-color: #ffffcc;
+	border-color : #00b6b2;
+}
+
+
+
+
+fieldset
+{
+	border :1 solid #4B6D90;
+	/*border :1px outset 4B6D90;*/
+
+}
+/*395173*/
+.title
+{
+	font-family: Tahoma;
+	font-size : large;
+	text-align : left;
+	color : A7B7CE;
+	font-weight : bold;
+	font-size : 25px;
+	background-color: #2E8B57;
+	border-top:1 #496384 solid;
+	border-bottom:1 #496384 solid;
+	text-indent:5px;
+	text-transform : uppercase;
+	/*border-top:1 solid 496384;
+	border-bottom:1 solid 496384;*/
+}
+table{
+	background-color : #3CB371;
+	
+}
+
+td.cell
+{
+	background-color : 536384;/*#ffffcc*/
+}
+td
+{
+	font-family : Tahoma;
+	/*color : 32445C;*/
+	font-size : 12px;
+}
+input
+{
+	font-family : Tahoma;
+	font-size : 12px;
+	background-color : #FFFFFF;
+	border :1 solid  #E4E4EE;
+	color: black;
+}
+input.checkbox
+{
+	background-color: transparent;
+	border :0;
+}
+
+textarea
+{
+	font-family : Tahoma;
+	font-size : 12px;
+	background-color : #FFFFFF;
+	border :1 solid #E4E4EE;
+	height:70px;
+	overflow:auto;
+	width:100%;
+	scrollbar-arrow-color : #395173;
+	scrollbar-face-color : #D7D6E6;
+	scrollbar-shadow-color : #395173;
+	scrollbar-track-color : White;
+}
+select
+{
+	font-family : Tahoma;
+	font-size : 12px;
+	background-color : #FFFFFF;
+	border :1 solid  #E4E4EE;
+}
+legend
+{
+	font-family : Tahoma;
+	color : 32445C;
+	font-size : 12px;
+}
+td button.getList{
+	width:20px;
+	height:20px;
+	vertical-align:middle;
+	border : 1px ridge;
+	font-weight : bold;
+}
+form{
+	margin:0 0 0 0;
+}
+/*-- class for hidden iframe --*/
+/*
+iframe.ifrmWork{
+		display:none;
+	}
+*/
+ 
+.debug{
+		display:none;
+}
+
+
+VIEW_TABLE{ cursor: 'hand'; font-size : x-small;}
+divTable.td
+	{
+		font-family : Tahoma;
+		color : 32445C;
+		scrollbar-arrow-color : #395173;
+		scrollbar-face-color : #D7D6E6;
+		scrollbar-shadow-color : #395173;
+		scrollbar-track-color : White;
+		
+	}	
+
+/*--- style dla ToolBar ---*/
+td.tdToolBar{
+	background-color : #2E8B57;
+}
+button { 
+	width: 25px; 
+	height:25px; 
+	border:none; 
+	background-color: transparent; 
+}
+
+.invisible {
+	display:none;
+}
+
+div
+	{
+		scrollbar-arrow-color : #395173;
+		scrollbar-face-color : #D7D6E6;
+		scrollbar-shadow-color : #395173;
+		scrollbar-track-color : White;
+		
+	}	
