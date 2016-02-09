@@ -1,6 +1,6 @@
 # SDS
 ====
-Sistema della Sicurezza 6.0.0.0
+Sistema della Sicurezza 6.0.1.0
 
 Sistema della Sicurezza has already been installed in some important Italian companies to support the management process of compliance foreseen by the European Directives (implemented in Italy by the Decree 81/2008, and subsequent adjustments) on the subject of safety at work.
 
