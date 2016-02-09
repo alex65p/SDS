@@ -37,4 +37,5 @@ public class Dipendenti_Search_View extends Dipendenti_Names_View implements jav
     public String CIT_DPD;
     public java.sql.Date DAT_CES_DPD;
     public String RAG_SCL_DTE;
+    public String SEX_DPD;
 }

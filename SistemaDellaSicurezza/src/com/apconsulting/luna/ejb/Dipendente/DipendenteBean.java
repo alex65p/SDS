@@ -70,7 +70,7 @@ public class DipendenteBean extends BMPEntityBean implements IDipendenteHome, ID
     String LIV_DPD;                //20 - Nullable
     java.sql.Date DAT_CES_DPD;            //21 - Nullable
     String NOT_DPD;
- 
+    String SEX_DPD;
 
 
     /*	String			File;				//19 - Computing from COD_AZL
@@ -248,6 +248,9 @@ public class DipendenteBean extends BMPEntityBean implements IDipendenteHome, ID
         return (new DipendenteBean()).ejbGetDipendenteByMTR(lCOD_AZL, strMTR_DIP);
     }
      
+    /*public Collection getDipendenteBySEX(long lCOD_AZL, String strSEX_DPD) {
+        return (new DipendenteBean()).ejbGetDipendenteBySEX(lCOD_AZL, strSEX_DPD);
+    }*/
 
 /////////////////////ATTENTION!!////////////////////////////////////////////////////////////////////////////
 //<comment description="Zdes opredeliayutsia metody home intefeisa kotorie budut rabotat v EJB Containere"/>
@@ -489,6 +492,7 @@ public class DipendenteBean extends BMPEntityBean implements IDipendenteHome, ID
                 this.LIV_DPD = rs.getString("LIV_DPD");
                 this.DAT_CES_DPD = rs.getDate("DAT_CES_DPD");
                 this.NOT_DPD = rs.getString("NOT_DPD");
+                this.SEX_DPD = rs.getString("SEX_DPD");
             } else {
                 throw new NoSuchEntityException("Dipendente con ID= non è trovata");
             }
@@ -569,7 +573,8 @@ public class DipendenteBean extends BMPEntityBean implements IDipendenteHome, ID
                         "dat_ass_dpd=?, " +
                         "liv_dpd=?, " +
                         "dat_ces_dpd=?, " +
-                        "not_dpd=? " +
+                        "not_dpd=?, " +
+                        "sex_dpd=? " +
                     "WHERE " +
                         "cod_dpd=?");
             ps.setLong(1, COD_AZL);
@@ -606,7 +611,9 @@ public class DipendenteBean extends BMPEntityBean implements IDipendenteHome, ID
             ps.setString(20, LIV_DPD);
             ps.setDate(21, DAT_CES_DPD);
             ps.setString(22, NOT_DPD);
-            ps.setLong(23, COD_DPD);
+            ps.setString(23, SEX_DPD);
+            ps.setLong(24, COD_DPD);
+
             if (ps.executeUpdate() == 0) {
                 throw new NoSuchEntityException("Dipendente with ID= not found");
             }
@@ -740,6 +747,33 @@ public class DipendenteBean extends BMPEntityBean implements IDipendenteHome, ID
         return (COD_FIS_DPD != null) ? COD_FIS_DPD : "";
     }
 
+    
+     // SEX_DPD   
+        public String getSEX_DPD() {
+            if (SEX_DPD == null) {
+            
+                return SEX_DPD = "";
+            }
+            
+        return SEX_DPD;
+    }
+
+    // SEX_DPD
+    public void setSEX_DPD(String newSEX_DPD) {
+        if (SEX_DPD != null) {
+            if (SEX_DPD.equals(newSEX_DPD)) {
+                return;
+            }
+        /*else{
+            SEX_DPD ="";   
+            }*/
+            
+        }
+        SEX_DPD = newSEX_DPD;
+        setModified();
+    }
+       
+        
 // COD_STA
     public void setCOD_STA(long newCOD_STA) {
         if (COD_STA == newCOD_STA) {
@@ -1086,6 +1120,9 @@ public class DipendenteBean extends BMPEntityBean implements IDipendenteHome, ID
         return DAT_FIE;
     }
 
+    
+   
+    
 //</comment>
 ///////////ATTENTION!!//////////////////////////////////////
 //<comment description="Zdes opredeliayutsia metody-views"/>
@@ -2027,6 +2064,7 @@ public class DipendenteBean extends BMPEntityBean implements IDipendenteHome, ID
             java.sql.Date dtDAT_ASS_DPD,
             String strLIV_DPD,
             java.sql.Date dtDAT_CES_DPD,
+            String strSEX_DPD,
             boolean ViewCessati,
             int iOrderParameter ) {
 
@@ -2046,8 +2084,10 @@ public class DipendenteBean extends BMPEntityBean implements IDipendenteHome, ID
                 dtDAT_ASS_DPD,
                 strLIV_DPD,
                 dtDAT_CES_DPD,
+                strSEX_DPD,
                 ViewCessati,
                 iOrderParameter);
+        //
     }
     ;
     public Collection ejbFindEx(long lCOD_AZL,
@@ -2066,6 +2106,7 @@ public class DipendenteBean extends BMPEntityBean implements IDipendenteHome, ID
             java.sql.Date dtDAT_ASS_DPD,
             String strLIV_DPD,
             java.sql.Date dtDAT_CES_DPD,
+            String strSEX_DPD,
             boolean ViewCessati,
             int iOrderParameter ) {
         return (new DipendenteBean()).ejbFindExSOP(lCOD_AZL,
@@ -2084,6 +2125,7 @@ public class DipendenteBean extends BMPEntityBean implements IDipendenteHome, ID
                 dtDAT_ASS_DPD,
                 strLIV_DPD,
                 dtDAT_CES_DPD,
+                strSEX_DPD ,
                 ViewCessati,null,
                 iOrderParameter);
     }
@@ -2263,6 +2305,7 @@ public class DipendenteBean extends BMPEntityBean implements IDipendenteHome, ID
             bmp.close();
         }
     }*/
+    
     public Collection findExSOP(long lCOD_AZL,
             String strNOM_DPD,
             String strCOG_DPD,
@@ -2279,6 +2322,7 @@ public class DipendenteBean extends BMPEntityBean implements IDipendenteHome, ID
             java.sql.Date dtDAT_ASS_DPD,
             String strLIV_DPD,
             java.sql.Date dtDAT_CES_DPD,
+            String strSEX_DPD,
             boolean ViewCessati,
             String strSubject,
             int iOrderParameter /*not used for now*/) {
@@ -2298,9 +2342,10 @@ public class DipendenteBean extends BMPEntityBean implements IDipendenteHome, ID
                 dtDAT_ASS_DPD,
                 strLIV_DPD,
                 dtDAT_CES_DPD,
+                strSEX_DPD,
                 ViewCessati,
                 strSubject,
-                iOrderParameter);
+                iOrderParameter    );
     }
     ;
 
@@ -2320,12 +2365,13 @@ public class DipendenteBean extends BMPEntityBean implements IDipendenteHome, ID
             java.sql.Date dtDAT_ASS_DPD,
             String strLIV_DPD,
             java.sql.Date dtDAT_CES_DPD,
+            String strSEX_DPD,
             boolean ViewCessati,
             String strSubject,
             int iOrderParameter /*not used for now*/) {
 
         String Table = ViewCessati ? "ana_dpd_tab" : "view_ana_dpd_tab";
-        String strSql = "SELECT a.cod_dpd, UPPER(a.nom_dpd) AS nom_dpd, UPPER(a.cog_dpd) AS cog_dpd, b.nom_fuz_azl, a.dat_nas_dpd, a.luo_nas_dpd, a.cit_dpd, d.rag_scl_dte, a.dat_ces_dpd, a.mtr_dpd  " +
+        String strSql = "SELECT a.cod_dpd, UPPER(a.nom_dpd) AS nom_dpd, UPPER(a.cog_dpd) AS cog_dpd, b.nom_fuz_azl, a.dat_nas_dpd, a.luo_nas_dpd, a.cit_dpd, d.rag_scl_dte, a.dat_ces_dpd, a.mtr_dpd, a.sex_dpd  " +
                 "FROM " + Table + " a left outer join ana_dte_tab d ON a.cod_dte=d.cod_dte,ana_fuz_azl_tab b WHERE a.cod_fuz_azl = b.cod_fuz_azl AND a.cod_azl = ? ";
 
         if (strNOM_DPD != null) {
@@ -2400,6 +2446,12 @@ public class DipendenteBean extends BMPEntityBean implements IDipendenteHome, ID
             strSql = strSql + "  AND  dat_ces_dpd = ?";
         }
         
+        if (strSEX_DPD != null) {
+            strSql = strSql + "  AND  UPPER(a.sex_dpd) LIKE ?";
+            
+        }
+                
+                
         strSql += " ORDER BY 3,2";
         int i = 1;
         BMPConnection bmp = getConnection();
@@ -2467,6 +2519,9 @@ public class DipendenteBean extends BMPEntityBean implements IDipendenteHome, ID
                 ps.setDate(i++, dtDAT_CES_DPD);
             }
             
+            if (strSEX_DPD != null) {
+                ps.setString(i++, strSEX_DPD.toUpperCase());
+            }
 //----------------------------------------------------------------------
             ResultSet rs = ps.executeQuery();
             java.util.ArrayList al = new java.util.ArrayList();
@@ -2482,6 +2537,7 @@ public class DipendenteBean extends BMPEntityBean implements IDipendenteHome, ID
                 obj.RAG_SCL_DTE=rs.getString(8);
                 obj.DAT_CES_DPD = rs.getDate(9);
                 obj.MTR_DPD = rs.getString(10);
+                obj.SEX_DPD = rs.getString(11);
                 al.add(obj);
             }
             return al;

@@ -19,8 +19,7 @@
 <%--                                                                            --%>
 <%--   ======================================================================== --%>
 
-<%
-    response.setHeader("Cache-Control", "no-cache"); //HTTP 1.1
+<%    response.setHeader("Cache-Control", "no-cache"); //HTTP 1.1
     response.setHeader("Pragma", "no-cache"); 		//HTTP 1.0
     response.setDateHeader("Expires", 0); 			//prevents caching at the proxy server
 %>
@@ -52,10 +51,10 @@
 <html>
     <head>
         <script type="text/javascript">
-            function beforeSave(){
+            function beforeSave() {
                 return ControllaDataCessazione();
-            }          
-            document.write("<title>" + getCompleteMenuPath(SubMenuAzienda,4) + "</title>");
+            }
+            document.write("<title>" + getCompleteMenuPath(SubMenuAzienda, 4) + "</title>");
         </script>
         <!-- autocompose data field -->
         <script type="text/javascript" src="../_scripts/calendar/utility.js"></script>
@@ -86,8 +85,8 @@
                     out.println("var height_mod = \"685px\"");
                 }
             %>
-                window.dialogWidth="910px";
-                window.dialogHeight=height_mod;
+            window.dialogWidth = "910px";
+            window.dialogHeight = height_mod;
         </script>
     </head>
     <body>
@@ -117,6 +116,8 @@
             String strNOT_DPD = "";
             String strNOM_AZL = "";			//22 - Computing from COD_AZL
             String strAttSubj = request.getParameter("ATTACH_SUBJECT");
+            String strSEX_DPD = "";
+
             //--- mary for upload
             AnagDocumentoFileInfo info = null;
             AnagDocumentoFileInfo infoLink = null;
@@ -159,7 +160,7 @@
                 strNOT_DPD = Formatter.format(Dipendente.getNOT_DPD()); //21 - Nullable
 
                 strNOM_AZL = Dipendente.getNOM_AZL();						//22 - Computing from COD_AZL
-
+                strSEX_DPD = Dipendente.getSEX_DPD();
                 //--- mary for upload
                 info = homeanagrDoc.getFileInfoU("ANA_DPD_TAB", new Long(strCOD_DPD).longValue());
                 infoLink = homeanagrDoc.getFileInfoULink("ANA_DPD_TAB", new Long(strCOD_DPD).longValue());
@@ -217,27 +218,26 @@
                                                 ToolBar.bCanPrint = true;
                                                 ToolBar.strPrintUrl = "SchedaDipendente.jsp?";
                                                 if (dipCessato || windowReadOnly) {
-                                                    
-                                                    
-                                                    if (!ifMsr) {                                                    
-                                                    ToolBar.bShowDelete = false;
-                                                    
+
+                                                    if (!ifMsr) {
+                                                        ToolBar.bShowDelete = false;
+
                                                     //Se il profilo è MSR, viene creato un apposito bottone sulla toolbar che permette di riabilitare un lavoratore cessato,
-                                                    //e viene gestito attraverso la toolbar.java, toolbar.js e la ANA_DPD_Enable.jsp  
-                                                    } else {        
-                                                    ToolBar.bShowDelete = false;
-                                                    ToolBar.bShowEnable = true;
-                                                    ToolBar.bCanEnable = true;
+                                                        //e viene gestito attraverso la toolbar.java, toolbar.js e la ANA_DPD_Enable.jsp  
+                                                    } else {
+                                                        ToolBar.bShowDelete = false;
+                                                        ToolBar.bShowEnable = true;
+                                                        ToolBar.bCanEnable = true;
                                                     }
-                                                    
+
                                                     if (dipCessato) {
                                                         ToolBar.setMessage(ApplicationConfigurator.LanguageManager.getString("Dipendente.dimesso.mess.1"));
                                                         ToolBar.bShowSave = false;
-                                                       
+
                                                     } else if (windowReadOnly) {
                                                         ToolBar.setMessage(ApplicationConfigurator.LanguageManager.getString("Anagrafica.in.sola.consultazione"));
                                                         ToolBar.bShowSave = true;
-                                                      
+
                                                     }
                                                 }
                                             } else {
@@ -245,13 +245,13 @@
                                                     ToolBar.setMessage(ApplicationConfigurator.LanguageManager.getString("Anagrafica.in.sola.consultazione"));
                                                     ToolBar.bShowSave = false;
                                                     ToolBar.bShowDelete = false;
-                                                    
+
                                                 }
                                             }
                                         %>
                                         <%=ToolBar.build(3)%>
-                                        
-                                                                           
+
+
                                     </table>
                                     <fieldset>
                                         <legend><%=ApplicationConfigurator.LanguageManager.getString("Anagrafica.lavoratore")%></legend>
@@ -264,19 +264,19 @@
                                                 <td colspan="3" >
                                                     <input size="53%" type="text" name="NOM_AZL" readonly value="<%=strNOM_AZL%>">
                                                 </td>
-                                                 <%if ((strAttSubj==null)||(strAttSubj.equals(""))||(strAttSubj.equals("DPD_INT"))){%>
+                                                <%if ((strAttSubj == null) || (strAttSubj.equals("")) || (strAttSubj.equals("DPD_INT"))) {%>
                                                 <td align="right"><%=ApplicationConfigurator.LanguageManager.getString("Fornitore.personale/servizi")%>&nbsp;
                                                 </td>
-                                                <%}else{%>
+                                                <%} else {%>
                                                 <td align="right"><b><%=ApplicationConfigurator.LanguageManager.getString("Fornitore.personale/servizi")%>&nbsp;</b>
                                                 </td>
                                                 <%}%>
 
-                                                
-                                                <%if ((strAttSubj==null)||(strAttSubj.equals(""))||(strAttSubj.equals("DPD_EST"))||(strAttSubj.equals("TES_VRF"))){%>
+
+                                                <%if ((strAttSubj == null) || (strAttSubj.equals("")) || (strAttSubj.equals("DPD_EST")) || (strAttSubj.equals("TES_VRF"))) {%>
                                                 <td>
                                                     <%if (Dipendente != null) {%>
-                                                        <select name="COD_DTE" id="COD_DTE" style="width:210">
+                                                    <select name="COD_DTE" id="COD_DTE" style="width:210">
                                                         <option></option>
                                                         <%
                                                             String str = "";
@@ -296,7 +296,8 @@
                                                             out.print(str);
                                                         %>
                                                     </select>
-                                                    <%}  if (Dipendente == null ){%>
+                                                    <%}
+                                                        if (Dipendente == null) {%>
                                                     <select name="COD_DTE" id="COD_DTE" style="width:210">
                                                         <option></option>
                                                         <%
@@ -319,7 +320,7 @@
                                                     </select>
                                                     <%}%>
                                                 </td>
-                                                <%}else if(strAttSubj.equals("DPD_INT")){%>
+                                                <%} else if (strAttSubj.equals("DPD_INT")) {%>
                                                 <td>
                                                     <%if (Dipendente != null && (dipCessato || windowReadOnly)) {%>
                                                     <input type="hidden" name="COD_DTE" value="<%=lCOD_DTE%>">
@@ -385,10 +386,43 @@
                                                 </td>
                                             </tr>
                                             <tr>
+                                            <!--......Aggiunta campo sesso............... --> 
+                                                <td  align="right"><%=ApplicationConfigurator.LanguageManager.getString("Sesso")%>&nbsp;</td>
+                                                <td>
+                                                    <!--RADIO BUTTON -->
+                                                    <input type="radio"
+                                                           name="SEX_DPD" 
+                                                           value="<%=ApplicationConfigurator.LanguageManager.getString("Femmina")%>"
+                                                           <%=strSEX_DPD != null
+                                                                   && !strSEX_DPD.trim().equals("")
+                                                                   && strSEX_DPD.equals(ApplicationConfigurator.LanguageManager.getString("Femmina"))
+                                                                   ? "checked" : ""%>
+                                                            <%=Dipendente != null
+                                                                   && (dipCessato || windowReadOnly)
+                                                                   ? "disabled" : ""%>
+                                                     /><%=ApplicationConfigurator.LanguageManager.getString("Femmina")%>&nbsp;
+                                                    <!--/RADIO BUTTON -->
+                                                    <!--RADIO BUTTON -->
+                                                    <input type="radio"
+                                                           name="SEX_DPD"                                                            
+                                                           value="<%=ApplicationConfigurator.LanguageManager.getString("Maschio")%>" 
+                                                           
+                                                           <%=strSEX_DPD != null
+                                                                   && !strSEX_DPD.trim().equals("")
+                                                                   && strSEX_DPD.equals(ApplicationConfigurator.LanguageManager.getString("Maschio"))
+                                                                   ? "checked" : ""%> 
+                                                           <%=Dipendente != null
+                                                                   && (dipCessato || windowReadOnly)
+                                                                   ? "disabled" : ""%> 
+                                                   /><%=ApplicationConfigurator.LanguageManager.getString("Maschio")%>
+                                                    <!--/RADIO BUTTON -->  
+                                            <!--....................... -->
+
                                                 <td  align="right"><%=ApplicationConfigurator.LanguageManager.getString("Cod.fiscale")%>&nbsp;</td>
-                                                <td colspan="3" ><input size="53%" type="text" name="COD_FIS_DPD" maxlength="16" value="<%=strCOD_FIS_DPD%>">&nbsp;
+                                                <td ><input size="50%" type="text" name="COD_FIS_DPD" maxlength="16" value="<%=strCOD_FIS_DPD%>">&nbsp;
                                                     &nbsp;&nbsp;
-                                                </td>
+                                                </td>   
+
                                                 <td align="right"><%=ApplicationConfigurator.LanguageManager.getString("Nazione")%>&nbsp;</td>
                                                 <td>
                                                     <%if (Dipendente != null && (dipCessato || windowReadOnly)) {%>
@@ -454,16 +488,16 @@
                                             <tr>
                                                 <td align="right"><%=ApplicationConfigurator.LanguageManager.getString("Note")%>&nbsp;</td>
                                                 <td colspan="3"><s2s:textarea cols="70" rows="2" maxlength="4000" name="NOT_DPD"><%=strNOT_DPD%></s2s:textarea></td>
-                                                <td colspan="2">&nbsp;</td>
-                                            </tr>
-                                            <!-- 	upload	 -->
-                                            <tr>
-                                                <td width="100%" colspan="6">
-                                                    <table width="100%" border="0">
-                                                        <tr>
-                                                            <td width="50%">
-                                                                <fieldset >
-                                                                    <legend><%=ApplicationConfigurator.LanguageManager.getString("File")%></legend>
+                                                    <td colspan="2">&nbsp;</td>
+                                                </tr>
+                                                <!-- 	upload	 -->
+                                                <tr>
+                                                    <td width="100%" colspan="6">
+                                                        <table width="100%" border="0">
+                                                            <tr>
+                                                                <td width="50%">
+                                                                    <fieldset >
+                                                                        <legend><%=ApplicationConfigurator.LanguageManager.getString("File")%></legend>
                                                                     <div style="height:50px;overflow:hidden;">
                                                                         <table width=100% border="0">
                                                                             <%if (info != null) {
@@ -567,211 +601,211 @@
 
 <script type="text/javascript" src="../_scripts/index.js"></script>
 <script type="text/javascript">
-    <!--
+                                        <!--
     //--------BUTTONS description-----------------------
-    btnParams = new Array();
-    btnParams[0] = {"id":"btnNew",
-        "onclick":addRow,
-        "action":"AddNew"
-    };
-    btnParams[1] = {"id":"btnEdit",
-        "onclick":editRow,
-        "action":"Edit"
-    };
-    btnParams[2] = {"id":"btnCancel",
-        "onclick":delRow,
-        "action":"Delete"
-    };
-    /*     btnParams[3] = {"id":"btnHelp",
-                                        "onmousedown":btnDown, 	
-                                        "onmouseup":btnOver,
-                                        "onmouseover":btnOver,
-                                        "onmouseout":btnOut,
-                                        "onclick":windowHelp,
-                                        "src":"../_images/HELP.GIF",
-                                        "action":"Help"
-                                        }; */
-   
-    //--------creating tabs--------------------------
-    var	tabbar = new TabBar("tbr1",document.all["dContainer"]);
-    var btnBar = new ButtonPanel("batPanel1", btnParams);
-    tabbar.addButtonBar(btnBar);
+                                        btnParams = new Array();
+                                        btnParams[0] = {"id": "btnNew",
+                                            "onclick": addRow,
+                                            "action": "AddNew"
+                                        };
+                                        btnParams[1] = {"id": "btnEdit",
+                                            "onclick": editRow,
+                                            "action": "Edit"
+                                        };
+                                        btnParams[2] = {"id": "btnCancel",
+                                            "onclick": delRow,
+                                            "action": "Delete"
+                                        };
+                                        /*     btnParams[3] = {"id":"btnHelp",
+                                         "onmousedown":btnDown, 	
+                                         "onmouseup":btnOver,
+                                         "onmouseover":btnOver,
+                                         "onmouseout":btnOut,
+                                         "onclick":windowHelp,
+                                         "src":"../_images/HELP.GIF",
+                                         "action":"Help"
+                                         }; */
 
-    tabbar.addTab(new Tab("tab1", "<%=ApplicationConfigurator.LanguageManager.getString("Numeri.telefonici")%>", tabbar));
-    tabbar.addTab(new Tab("tab2", "<%=ApplicationConfigurator.LanguageManager.getString("Ditte.precedenti")%>", tabbar));
-    tabbar.addTab(new Tab("tab3", "<%=ApplicationConfigurator.LanguageManager.getString("Lingue.straniere")%>", tabbar));
-    tabbar.addTab(new Tab("tab4", "<%=ApplicationConfigurator.LanguageManager.getString("Titoli.di.studio")%>", tabbar));
-    tabbar.addTab(new Tab("tab5", "<%=ApplicationConfigurator.LanguageManager.getString("Percorsi.formativi")%>", tabbar));
-    tabbar.addTab(new Tab("tab6", "<%=ApplicationConfigurator.LanguageManager.getString("Corsi")%>", tabbar));
-    tabbar.addTab(new Tab("tab7", "<%=ApplicationConfigurator.LanguageManager.getString("Consegne.D.P.I.breve")%>", tabbar));
-    tabbar.addTab(new Tab("tab8", "<%=ApplicationConfigurator.LanguageManager.getString("Attivita.lavorative")%>", tabbar));
+                                        //--------creating tabs--------------------------
+                                        var tabbar = new TabBar("tbr1", document.all["dContainer"]);
+                                        var btnBar = new ButtonPanel("batPanel1", btnParams);
+                                        tabbar.addButtonBar(btnBar);
 
-    tabbar.idParentRecord = <%=lCOD_DPD%>;
-    tabbar.refreshTabUrl="ANA_DPD_Tabs.jsp?dipCessato=<%=dipCessato%>&strCOD_FIS_DPD=<%=strCOD_FIS_DPD%>";
-    
-    tabbar.activeColumnsSorting(<%=ApplicationConfigurator.isModuleEnabled(MODULES.TAB_COL_ORD)%>);
-    tabbar.RefreshAllTabs();
+                                        tabbar.addTab(new Tab("tab1", "<%=ApplicationConfigurator.LanguageManager.getString("Numeri.telefonici")%>", tabbar));
+                                        tabbar.addTab(new Tab("tab2", "<%=ApplicationConfigurator.LanguageManager.getString("Ditte.precedenti")%>", tabbar));
+                                        tabbar.addTab(new Tab("tab3", "<%=ApplicationConfigurator.LanguageManager.getString("Lingue.straniere")%>", tabbar));
+                                        tabbar.addTab(new Tab("tab4", "<%=ApplicationConfigurator.LanguageManager.getString("Titoli.di.studio")%>", tabbar));
+                                        tabbar.addTab(new Tab("tab5", "<%=ApplicationConfigurator.LanguageManager.getString("Percorsi.formativi")%>", tabbar));
+                                        tabbar.addTab(new Tab("tab6", "<%=ApplicationConfigurator.LanguageManager.getString("Corsi")%>", tabbar));
+                                        tabbar.addTab(new Tab("tab7", "<%=ApplicationConfigurator.LanguageManager.getString("Consegne.D.P.I.breve")%>", tabbar));
+                                        tabbar.addTab(new Tab("tab8", "<%=ApplicationConfigurator.LanguageManager.getString("Attivita.lavorative")%>", tabbar));
 
-    //----add action parameters to tabs
-    tabbar.tabs[0].tabObj.actionParams ={
-        "Feachures":NUM_TEL_FOR_Feachures,
-        "AddNew":	{"url":"../Form_NUM_TEL_DPD/NUM_TEL_Form.jsp",
-            "buttonIndex":0,
-            "disabled": <%=dipCessato%>
-        },
-        "Delete":	{"url":"../Form_NUM_TEL_DPD/NUM_TEL_Delete.jsp",
-            "buttonIndex":2,
-            "target_element":document.all["ifrmWork"],
-            "disabled": <%=dipCessato%>
-        },
-        "Edit":	{"url":"../Form_NUM_TEL_DPD/NUM_TEL_Form.jsp",
-            "buttonIndex":1,
-            "disabled": <%=dipCessato%>
-        },
-        "Help":	{"url":"../Form_NUM_TEL/NUM_TEL_Help.jsp",
-            "buttonIndex":3
-        }
-    };
-    tabbar.tabs[1].tabObj.actionParams ={
-        "Feachures":DIT_PRC_DPD_Feachures,
-        "AddNew":	{"url":"../Form_DIT_PRC_DPD/DIT_PRC_DPD_Form.jsp",
-            "buttonIndex":0,
-            "disabled": <%=dipCessato%>
-        },
-        "Delete":	{"url":"../Form_DIT_PRC_DPD/DIT_PRC_DPD_Delete.jsp?LOCAL_MODE=DPD",
-            "buttonIndex":2,
-            "target_element":document.all["ifrmWork"],
-            "disabled": <%=dipCessato%>
-        },
-        "Edit":	{"url":"../Form_DIT_PRC_DPD/DIT_PRC_DPD_Form.jsp",
-            "buttonIndex":1
-        },
-        "Help":	{"url":"../Form_DIT_PRC_DPD/DIT_PRC_DPD_Help.jsp",
-            "buttonIndex":3
-        }
-    };
-    tabbar.tabs[2].tabObj.actionParams ={
-        "Feachures":LNG_STR_DPD_Feachures,
-        "AddNew":	{"url":"../Form_LNG_STR_DPD/LNG_STR_DPD_Form.jsp",
-            "buttonIndex":0,
-            "disabled": <%=dipCessato%>
-        },
-        "Delete":	{"url":"../Form_LNG_STR_DPD/LNG_STR_DPD_Delete.jsp",
-            "buttonIndex":2,
-            "target_element":document.all["ifrmWork"],
-            "disabled": <%=dipCessato%>
-        },
-        "Edit":	{"url":"../Form_LNG_STR_DPD/LNG_STR_DPD_Form.jsp",
-            "buttonIndex":1,
-            "disabled": <%=dipCessato%>
-        },
-        "Help":	{"url":"../Form_LNG_STR_DPD/LNG_STR_DPD_Help.jsp",
-            "buttonIndex":3
-        }
-    };
-    tabbar.tabs[3].tabObj.actionParams ={
-        "Feachures":TIT_STU_SPC_Feachures,
-        "AddNew":	{"url":"../Form_TIT_STU_SPC/TIT_STU_SPC_Form.jsp",
-            "buttonIndex":0,
-            "disabled": <%=dipCessato%>
-        },
-        "Delete":	{"url":"../Form_TIT_STU_SPC/TIT_STU_SPC_Delete.jsp",
-            "buttonIndex":2,
-            "target_element":document.all["ifrmWork"],
-            "disabled": <%=dipCessato%>
-        },
-        "Edit":	{"url":"../Form_TIT_STU_SPC/TIT_STU_SPC_Form.jsp",
-            "buttonIndex":1,
-            "disabled": <%=dipCessato%>
-        },
-        "Help":	{"url":"../Form_TIT_STU_SPC/TIT_STU_SPC_Help.jsp",
-            "buttonIndex":3
-        }
-    };
-    tabbar.tabs[4].tabObj.actionParams ={
-        "Feachures":ANA_PCS_FRM_Feachures,
-        "AddNew":	{"url":"../Form_ANA_PCS_FRM/ANA_PCS_FRM_Form.jsp?ATTACH_URL=Form_ANA_DPD/ANA_DPD_Attach.jsp&ATTACH_SUBJECT=PCS_FRM",
-            "buttonIndex":0,
-            "disabled": <%=dipCessato%>
-        },
-        "Delete":	{"url":"../Form_ANA_DPD/ANA_DPD_Delete.jsp?LOCAL_MODE=PCS_FRM",
-            "buttonIndex":2,
-            "target_element":document.all["ifrmWork"],
-            "disabled": <%=dipCessato%>
-        },
-        "Edit":	{"url":"../Form_ANA_PCS_FRM/ANA_PCS_FRM_Form.jsp?ATTACH_URL=Form_ANA_DPD/ANA_DPD_Attach.jsp&ATTACH_SUBJECT=PCS_FRM",
-            "buttonIndex":1,
-            "disabled": <%=dipCessato%>
-        },
-        "Help":	{"url":"../Form_ANA_PCS_FRM/ANA_PCS_FRM_Help.jsp",
-            "buttonIndex":3
-        }
-    };
-    tabbar.tabs[5].tabObj.actionParams ={
-        "Feachures":COR_DPD_Feachures,
-        "AddNew":	{"url":"../Form_COR_DPD/COR_DPD_Form.jsp",                                                                            "buttonIndex":0,
-            "disabled": <%=dipCessato%>
-        },
-        "Delete":	{"url":"../Form_ANA_DPD/ANA_DPD_Delete.jsp?LOCAL_MODE=COR_DPD",
-            "buttonIndex":2,
-            "target_element":document.all["ifrmWork"],
-            "disabled": <%=dipCessato%>
-        },
-        "Edit":	{"url":"../Form_COR_DPD/COR_DPD_Form.jsp",
-            "buttonIndex":1,
-            "disabled": <%=dipCessato%>
-        },
-        "Help":	{"url":"../Form_COR_DPD/COR_DPD_Help.jsp",
-            "buttonIndex":3
-        }
-    };
-    tabbar.tabs[6].tabObj.actionParams ={
-        "Feachures":DPI_DPD_Feachures,
-        "AddNew":	{"url":"../Form_DPI_DPD/DPI_DPD_Form.jsp",
-            "buttonIndex":0,
-            "disabled": <%=dipCessato%>
-        },
-        "Delete":	{"url":"../Form_DPI_DPD/DPI_DPD_Delete.jsp?LOCAL_MODE=A",
-            "buttonIndex":2,
-            "target_element":document.all["ifrmWork"],
-            "disabled": <%=dipCessato%>
-        },
-        "Edit":	{"url":"../Form_DPI_DPD/DPI_DPD_Form.jsp",
-            "buttonIndex":1,
-            "disabled": <%=dipCessato%>
-        },
-        "Help":	{"url":"../Form_DPI_DPD/DPI_DPD_Help.jsp",
-            "buttonIndex":3
-        }
-    };
-    tabbar.tabs[7].tabObj.actionParams ={
-        "Feachures":MAN_DPD_Feachures,
-        "AddNew":	{"url":"../Form_MAN_DPD/MAN_DPD_Form.jsp?ATTACH_URL=Form_ANA_DPD/ANA_DPD_Attach.jsp&ATTACH_SUBJECT=MAN_DPD",
-            "buttonIndex":0,
-            "disabled": <%=dipCessato%>
-        },
-        "Delete":	{"url":"../Form_MAN_DPD/MAN_DPD_Delete.jsp",
-            "buttonIndex":2,
-            "target_element":document.all["ifrmWork"],
-            "disabled": <%=dipCessato%>
+                                        tabbar.idParentRecord = <%=lCOD_DPD%>;
+                                        tabbar.refreshTabUrl = "ANA_DPD_Tabs.jsp?dipCessato=<%=dipCessato%>&strCOD_FIS_DPD=<%=strCOD_FIS_DPD%>";
 
-        },
-        "Edit":	{"url":"../Form_MAN_DPD/MAN_DPD_Form.jsp?ATTACH_URL=Form_ANA_DPD/ANA_DPD_Attach.jsp&ATTACH_SUBJECT=MAN_DPD",
-            "buttonIndex":1,
-            "disabled": <%=dipCessato%>
-        },
-        "Help":	{"url":"../Form_MAN_DPD/MAN_DPD_Help.jsp",
-            "buttonIndex":3
-        }
-    };
+                                        tabbar.activeColumnsSorting(<%=ApplicationConfigurator.isModuleEnabled(MODULES.TAB_COL_ORD)%>);
+                                        tabbar.RefreshAllTabs();
 
-    //-----activate first tab--------------------------
-    tabbar.tabs[0].center.click();
-    // -->
+                                        //----add action parameters to tabs
+                                        tabbar.tabs[0].tabObj.actionParams = {
+                                            "Feachures": NUM_TEL_FOR_Feachures,
+                                            "AddNew": {"url": "../Form_NUM_TEL_DPD/NUM_TEL_Form.jsp",
+                                                "buttonIndex": 0,
+                                                "disabled": <%=dipCessato%>
+                                            },
+                                            "Delete": {"url": "../Form_NUM_TEL_DPD/NUM_TEL_Delete.jsp",
+                                                "buttonIndex": 2,
+                                                "target_element": document.all["ifrmWork"],
+                                                "disabled": <%=dipCessato%>
+                                            },
+                                            "Edit": {"url": "../Form_NUM_TEL_DPD/NUM_TEL_Form.jsp",
+                                                "buttonIndex": 1,
+                                                "disabled": <%=dipCessato%>
+                                            },
+                                            "Help": {"url": "../Form_NUM_TEL/NUM_TEL_Help.jsp",
+                                                "buttonIndex": 3
+                                            }
+                                        };
+                                        tabbar.tabs[1].tabObj.actionParams = {
+                                            "Feachures": DIT_PRC_DPD_Feachures,
+                                            "AddNew": {"url": "../Form_DIT_PRC_DPD/DIT_PRC_DPD_Form.jsp",
+                                                "buttonIndex": 0,
+                                                "disabled": <%=dipCessato%>
+                                            },
+                                            "Delete": {"url": "../Form_DIT_PRC_DPD/DIT_PRC_DPD_Delete.jsp?LOCAL_MODE=DPD",
+                                                "buttonIndex": 2,
+                                                "target_element": document.all["ifrmWork"],
+                                                "disabled": <%=dipCessato%>
+                                            },
+                                            "Edit": {"url": "../Form_DIT_PRC_DPD/DIT_PRC_DPD_Form.jsp",
+                                                "buttonIndex": 1
+                                            },
+                                            "Help": {"url": "../Form_DIT_PRC_DPD/DIT_PRC_DPD_Help.jsp",
+                                                "buttonIndex": 3
+                                            }
+                                        };
+                                        tabbar.tabs[2].tabObj.actionParams = {
+                                            "Feachures": LNG_STR_DPD_Feachures,
+                                            "AddNew": {"url": "../Form_LNG_STR_DPD/LNG_STR_DPD_Form.jsp",
+                                                "buttonIndex": 0,
+                                                "disabled": <%=dipCessato%>
+                                            },
+                                            "Delete": {"url": "../Form_LNG_STR_DPD/LNG_STR_DPD_Delete.jsp",
+                                                "buttonIndex": 2,
+                                                "target_element": document.all["ifrmWork"],
+                                                "disabled": <%=dipCessato%>
+                                            },
+                                            "Edit": {"url": "../Form_LNG_STR_DPD/LNG_STR_DPD_Form.jsp",
+                                                "buttonIndex": 1,
+                                                "disabled": <%=dipCessato%>
+                                            },
+                                            "Help": {"url": "../Form_LNG_STR_DPD/LNG_STR_DPD_Help.jsp",
+                                                "buttonIndex": 3
+                                            }
+                                        };
+                                        tabbar.tabs[3].tabObj.actionParams = {
+                                            "Feachures": TIT_STU_SPC_Feachures,
+                                            "AddNew": {"url": "../Form_TIT_STU_SPC/TIT_STU_SPC_Form.jsp",
+                                                "buttonIndex": 0,
+                                                "disabled": <%=dipCessato%>
+                                            },
+                                            "Delete": {"url": "../Form_TIT_STU_SPC/TIT_STU_SPC_Delete.jsp",
+                                                "buttonIndex": 2,
+                                                "target_element": document.all["ifrmWork"],
+                                                "disabled": <%=dipCessato%>
+                                            },
+                                            "Edit": {"url": "../Form_TIT_STU_SPC/TIT_STU_SPC_Form.jsp",
+                                                "buttonIndex": 1,
+                                                "disabled": <%=dipCessato%>
+                                            },
+                                            "Help": {"url": "../Form_TIT_STU_SPC/TIT_STU_SPC_Help.jsp",
+                                                "buttonIndex": 3
+                                            }
+                                        };
+                                        tabbar.tabs[4].tabObj.actionParams = {
+                                            "Feachures": ANA_PCS_FRM_Feachures,
+                                            "AddNew": {"url": "../Form_ANA_PCS_FRM/ANA_PCS_FRM_Form.jsp?ATTACH_URL=Form_ANA_DPD/ANA_DPD_Attach.jsp&ATTACH_SUBJECT=PCS_FRM",
+                                                "buttonIndex": 0,
+                                                "disabled": <%=dipCessato%>
+                                            },
+                                            "Delete": {"url": "../Form_ANA_DPD/ANA_DPD_Delete.jsp?LOCAL_MODE=PCS_FRM",
+                                                "buttonIndex": 2,
+                                                "target_element": document.all["ifrmWork"],
+                                                "disabled": <%=dipCessato%>
+                                            },
+                                            "Edit": {"url": "../Form_ANA_PCS_FRM/ANA_PCS_FRM_Form.jsp?ATTACH_URL=Form_ANA_DPD/ANA_DPD_Attach.jsp&ATTACH_SUBJECT=PCS_FRM",
+                                                "buttonIndex": 1,
+                                                "disabled": <%=dipCessato%>
+                                            },
+                                            "Help": {"url": "../Form_ANA_PCS_FRM/ANA_PCS_FRM_Help.jsp",
+                                                "buttonIndex": 3
+                                            }
+                                        };
+                                        tabbar.tabs[5].tabObj.actionParams = {
+                                            "Feachures": COR_DPD_Feachures,
+                                            "AddNew": {"url": "../Form_COR_DPD/COR_DPD_Form.jsp", "buttonIndex": 0,
+                                                "disabled": <%=dipCessato%>
+                                            },
+                                            "Delete": {"url": "../Form_ANA_DPD/ANA_DPD_Delete.jsp?LOCAL_MODE=COR_DPD",
+                                                "buttonIndex": 2,
+                                                "target_element": document.all["ifrmWork"],
+                                                "disabled": <%=dipCessato%>
+                                            },
+                                            "Edit": {"url": "../Form_COR_DPD/COR_DPD_Form.jsp",
+                                                "buttonIndex": 1,
+                                                "disabled": <%=dipCessato%>
+                                            },
+                                            "Help": {"url": "../Form_COR_DPD/COR_DPD_Help.jsp",
+                                                "buttonIndex": 3
+                                            }
+                                        };
+                                        tabbar.tabs[6].tabObj.actionParams = {
+                                            "Feachures": DPI_DPD_Feachures,
+                                            "AddNew": {"url": "../Form_DPI_DPD/DPI_DPD_Form.jsp",
+                                                "buttonIndex": 0,
+                                                "disabled": <%=dipCessato%>
+                                            },
+                                            "Delete": {"url": "../Form_DPI_DPD/DPI_DPD_Delete.jsp?LOCAL_MODE=A",
+                                                "buttonIndex": 2,
+                                                "target_element": document.all["ifrmWork"],
+                                                "disabled": <%=dipCessato%>
+                                            },
+                                            "Edit": {"url": "../Form_DPI_DPD/DPI_DPD_Form.jsp",
+                                                "buttonIndex": 1,
+                                                "disabled": <%=dipCessato%>
+                                            },
+                                            "Help": {"url": "../Form_DPI_DPD/DPI_DPD_Help.jsp",
+                                                "buttonIndex": 3
+                                            }
+                                        };
+                                        tabbar.tabs[7].tabObj.actionParams = {
+                                            "Feachures": MAN_DPD_Feachures,
+                                            "AddNew": {"url": "../Form_MAN_DPD/MAN_DPD_Form.jsp?ATTACH_URL=Form_ANA_DPD/ANA_DPD_Attach.jsp&ATTACH_SUBJECT=MAN_DPD",
+                                                "buttonIndex": 0,
+                                                "disabled": <%=dipCessato%>
+                                            },
+                                            "Delete": {"url": "../Form_MAN_DPD/MAN_DPD_Delete.jsp",
+                                                "buttonIndex": 2,
+                                                "target_element": document.all["ifrmWork"],
+                                                "disabled": <%=dipCessato%>
+
+                                            },
+                                            "Edit": {"url": "../Form_MAN_DPD/MAN_DPD_Form.jsp?ATTACH_URL=Form_ANA_DPD/ANA_DPD_Attach.jsp&ATTACH_SUBJECT=MAN_DPD",
+                                                "buttonIndex": 1,
+                                                "disabled": <%=dipCessato%>
+                                            },
+                                            "Help": {"url": "../Form_MAN_DPD/MAN_DPD_Help.jsp",
+                                                "buttonIndex": 3
+                                            }
+                                        };
+
+                                        //-----activate first tab--------------------------
+                                        tabbar.tabs[0].center.click();
+                                        // -->
 </script>
 <%} else {%>
 <script type="text/javascript">
-    window.dialogHeight=height_new;
+                                        window.dialogHeight = height_new;
 </script>
 <%}%>
 <%

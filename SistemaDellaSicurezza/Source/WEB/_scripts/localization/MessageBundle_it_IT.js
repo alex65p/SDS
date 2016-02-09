@@ -246,3 +246,4 @@ arraylng["MSG_0222"]="ATTENZIONE!! - OPERAZIONE ANNULLATA.\n\nIl percorso del br
 arraylng["MSG_0223"]="Il record selezionato è stato riabilitato";
 arraylng["MSG_0224"]="Non è possibile riattivare il record";
 arraylng["MSG_0225"]="riattivare il record?";
+arraylng["MSG_0226"]="Il campo sesso accetta solo i parametri 'M' o 'F'";

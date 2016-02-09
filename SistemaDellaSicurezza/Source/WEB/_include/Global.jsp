@@ -21,8 +21,8 @@
 
 <%@page import="s2s.luna.conf.ApplicationConfigurator"%>
 <%!
-public final static String APP_DB_VERSION="6.0.0 ";
-public final static String APP_VERSION="6.0.0.0";
+public final static String APP_DB_VERSION="6.0.1 ";
+public final static String APP_VERSION="6.0.1.0";
 public final static String APP_WINDOW_TITLE="Sistema della Sicurezza - Rel. " + APP_VERSION;
 public final static String APP_VIRTUAL_PATH=ApplicationConfigurator.getContextPath();
 %>

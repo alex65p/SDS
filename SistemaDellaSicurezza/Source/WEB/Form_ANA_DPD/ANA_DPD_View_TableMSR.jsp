@@ -60,6 +60,7 @@
             String strCOG_DPD = c.checkStringEx(ApplicationConfigurator.LanguageManager.getString("Cognome"), (String) request.getParameter("COG_DPD"), false);
             String strNOM_DPD = c.checkStringEx(ApplicationConfigurator.LanguageManager.getString("Nome"), (String) request.getParameter("NOM_DPD"), false);
             String strCOD_FIS_DPD = c.checkStringEx(ApplicationConfigurator.LanguageManager.getString("Cod.fiscale"), (String) request.getParameter("COD_FIS_DPD"), false);
+            String strSEX_DPD = c.checkStringEx(ApplicationConfigurator.LanguageManager.getString("Sesso"), (String) request.getParameter("SEX_DPD"), false);
             Long lCOD_STA = c.checkLongEx(ApplicationConfigurator.LanguageManager.getString("Nazione"), (String) request.getParameter("COD_STA"), false);
             String strLUO_NAS_DPD = c.checkStringEx(ApplicationConfigurator.LanguageManager.getString("Luogo.di.nascita"), (String) request.getParameter("LUO_NAS_DPD"), false);
             java.sql.Date dtDAT_NAS_DPD = c.checkDate(ApplicationConfigurator.LanguageManager.getString("Data.di.nascita"), (String) request.getParameter("DAT_NAS_DPD"), false);
@@ -81,8 +82,7 @@
                 col = home.getDipendenti_Search_View(lCOD_AZL);
             } else {
                 if (strSubject == null) {
-                    col = home.findEx(
-                            lCOD_AZL,
+                    col = home.findEx( lCOD_AZL,
                             strNOM_DPD,
                             strCOG_DPD,
                             strMTR_DPD,
@@ -96,8 +96,9 @@
                             strPRV_DPD,
                             lCOD_DTE,
                             dtDAT_ASS_DPD,
-                            strLIV_DPD,
+                            strLIV_DPD,                            
                             dtDAT_CES_DPD,
+                            strSEX_DPD,//
                             fromMenu,
                             0);
                 } else {
@@ -118,6 +119,7 @@
                             dtDAT_ASS_DPD,
                             strLIV_DPD,
                             dtDAT_CES_DPD,
+                            strSEX_DPD,//
                             fromMenu, strSubject,
                             0);
                 }

@@ -179,4 +179,11 @@ public interface IDipendente extends EJBObject {
                             long lPTG_OTT_DPD,java.sql.Date oldDAT_EFT_COR);
 
     public void removeCOR_DPD(long lCOD_COR_DPD,java.sql.Date sDAT_EFT_COR); //--- mary 06/04/2004
+
+        // SEX_DPD
+
+    public String getSEX_DPD();
+
+    public void setSEX_DPD(String newSEX_DPD);
+
 }

@@ -43,9 +43,11 @@
                 <th>&nbsp;<%=ApplicationConfigurator.LanguageManager.getString("Matricola")%>&nbsp;</th>
                 <th>&nbsp;<%=ApplicationConfigurator.LanguageManager.getString("Cognome")%>&nbsp;</th>
                 <th>&nbsp;<%=ApplicationConfigurator.LanguageManager.getString("Nome")%>&nbsp;</th>
+                
                 <th>&nbsp;<%=ApplicationConfigurator.LanguageManager.getString("Funz.Aziendale")%>&nbsp;</th>
                 <th>&nbsp;<%=ApplicationConfigurator.LanguageManager.getString("Fornitore.personale/servizi")%>&nbsp;</th>
-                <th nowrap>&nbsp;<%=ApplicationConfigurator.LanguageManager.getString("Data.di.nascita")%>&nbsp;</th>
+                <th>&nbsp;<%=ApplicationConfigurator.LanguageManager.getString("Data.di.nascita")%>&nbsp;</th>
+                <th>&nbsp;<%=ApplicationConfigurator.LanguageManager.getString("Sesso")%>&nbsp;</th>
             </tr>
         </thead>        
         <tbody>
@@ -59,6 +61,7 @@
                 String strCOG_DPD = c.checkStringEx(ApplicationConfigurator.LanguageManager.getString("Cognome"), (String) request.getParameter("COG_DPD"), false);
                 String strNOM_DPD = c.checkStringEx(ApplicationConfigurator.LanguageManager.getString("Nome"), (String) request.getParameter("NOM_DPD"), false);
                 String strCOD_FIS_DPD = c.checkStringEx(ApplicationConfigurator.LanguageManager.getString("Cod.fiscale"), (String) request.getParameter("COD_FIS_DPD"), false);
+                String strSEX_DPD = c.checkStringEx(ApplicationConfigurator.LanguageManager.getString("Sesso"), (String) request.getParameter("SEX_DPD"), false);
                 Long lCOD_STA = c.checkLongEx(ApplicationConfigurator.LanguageManager.getString("Nazione"), (String) request.getParameter("COD_STA"), false);
                 String strLUO_NAS_DPD = c.checkStringEx(ApplicationConfigurator.LanguageManager.getString("Luogo.di.nascita"), (String) request.getParameter("LUO_NAS_DPD"), false);
                 java.sql.Date dtDAT_NAS_DPD = c.checkDate(ApplicationConfigurator.LanguageManager.getString("Data.di.nascita"), (String) request.getParameter("DAT_NAS_DPD"), false);
@@ -97,6 +100,7 @@
                                 dtDAT_ASS_DPD,
                                 strLIV_DPD,
                                 dtDAT_CES_DPD,
+                                strSEX_DPD,
                                 fromMenu,
                                 0);
                     } else {
@@ -115,8 +119,9 @@
                                 strPRV_DPD,
                                 lCOD_DTE,
                                 dtDAT_ASS_DPD,
-                                strLIV_DPD,
+                                strLIV_DPD,                                
                                 dtDAT_CES_DPD,
+                                strSEX_DPD,
                                 fromMenu, strSubject,
                                 0);
                     }
@@ -127,7 +132,7 @@
                 String RowStyle = "";
                 StringBuilder jspOutputBuilder = null;
                 while (it.hasNext()) {
-                    Dipendenti_Search_View view = (Dipendenti_Search_View) it.next();
+                    Dipendenti_Search_View view = (Dipendenti_Search_View) it.next();// classe appoggio 
                     RowStyle = home.dipendenteCessato(view.DAT_CES_DPD) == true ? "VIEW_TR_DIP_CESSATO" : "VIEW_TR";
             %>		
             <tr class="<%=RowStyle%>" valign="top" INDEX="<%=view.COD_DPD%>" onclick="g_Handler.OnRowClick(this)" ondblclick="g_Handler.OnRowDblClick(this)">
@@ -140,7 +145,9 @@
                                 .append(Formatter.format(view.NOM_DPD)).append("&nbsp;</td><td nowrap>&nbsp;")
                                 .append(Formatter.format(view.NOM_FUZ_AZL)).append("&nbsp;</td><td nowrap>&nbsp;")
                                 .append(Formatter.format(view.RAG_SCL_DTE)).append("&nbsp;</td><td nowrap>&nbsp;")
-                                .append(Formatter.format(view.DAT_NAS_DPD)).append("&nbsp;</td>");
+                                .append(Formatter.format(view.DAT_NAS_DPD)).append("&nbsp;</td><td nowrap>&nbsp;")
+                                .append(Formatter.format(view.SEX_DPD)).append("&nbsp;</td>");
+
                         out.println(jspOutputBuilder.toString());
                     }
                 %>
@@ -154,6 +161,7 @@
                 <th><input type="text" name="cerca_Funz.Aziendale" value="Cerca <%=ApplicationConfigurator.LanguageManager.getString("Funz.Aziendale")%>" class="search_init" /></th>
                 <th><input type="text" name="cerca_Fornitore.personale/servizi" value="Cerca <%=ApplicationConfigurator.LanguageManager.getString("Fornitore.personale/servizi")%>" class="search_init" /></th>
                 <th><input type="text" name="cerca_Data.di.nascita" value="Cerca <%=ApplicationConfigurator.LanguageManager.getString("Data.di.nascita")%>" class="search_init" /></th>
+                <th><input type="text" name="cerca_Sesso" value="Cerca <%=ApplicationConfigurator.LanguageManager.getString("Sesso")%>" class="search_init" /></th>
             </tr>
         </tfoot>        
     </table>

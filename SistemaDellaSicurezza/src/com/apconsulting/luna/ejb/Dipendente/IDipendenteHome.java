@@ -89,7 +89,8 @@ public interface IDipendenteHome extends EJBHome {
 
     public DipendenteFunzioneView getDipendenteFunzioneView(long lCOD_DPD);
 
-    public Collection findEx(long lCOD_AZL,
+    public Collection findEx(
+            long lCOD_AZL,
             String strNOM_DPD,
             String strCOG_DPD,
             String strMTR_DPD,
@@ -105,10 +106,11 @@ public interface IDipendenteHome extends EJBHome {
             java.sql.Date dtDAT_ASS_DPD,
             String strLIV_DPD,
             java.sql.Date dtDAT_CES_DPD,
+            String strSEX_DPD,
             boolean ViewCessati,
             int iOrderParameter /*not used for now*/);
 
-    public Collection findExSOP(long lCOD_AZL,
+        public Collection findExSOP(long lCOD_AZL,
             String strNOM_DPD,
             String strCOG_DPD,
             String strMTR_DPD,
@@ -124,6 +126,7 @@ public interface IDipendenteHome extends EJBHome {
             java.sql.Date dtDAT_ASS_DPD,
             String strLIV_DPD,
             java.sql.Date dtDAT_CES_DPD,
+            String strSEX_DPD,
             boolean ViewCessati,
             String strSubject,
             int iOrderParameter /*not used for now*/);

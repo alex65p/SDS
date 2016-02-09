@@ -95,12 +95,13 @@
         parent.g_Handler.dataTableArrayWidth=  [
                         {"bSortable": true, "bOrderable": true, "aTargets": [0]},
                         {"sWidth": "7%", "aTargets": [0], "sType": "string"},
-                        {"sWidth": "10%", "aTargets": [1],    "sType":  "string" },
-                        {"sWidth": "23%", "aTargets": [2], "sType": "string"},
+                        {"sWidth": "10%", "aTargets": [1], "sType":  "string" },
+                        {"sWidth": "15%", "aTargets": [2], "sType": "string"},
                         {"sWidth": "15%", "aTargets": [3], "sType": "string"},
                         {"sWidth": "15%", "aTargets": [4], "sType": "string"},
-                        {"sWidth": "20%", "aTargets": [5], "sType": "string"},
-                        {"sWidth": "15%", "aTargets": [6], "sType": "date-eu"}   ]   ;
+                        {"sWidth": "17%", "aTargets": [5], "sType": "string"},
+                        {"sWidth": "14%", "aTargets": [6], "sType": "date-eu"},
+                        {"sWidth": "7%", "aTargets": [7], "sType": "string"}  ]   ;
         <%}%>    
          
     <%if (ApplicationConfigurator.isModuleEnabled(MODULES.GEST_DPD_EXT)) {%>

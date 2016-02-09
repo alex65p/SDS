@@ -243,3 +243,4 @@ arraylng["MSG_0219"]="Si è verificato il seguente errore:*";
 arraylng["MSG_0220"]="Sei sicuro di voler eliminare questa impostazione?*";
 arraylng["MSG_0221"]="ATTENZIONE!! - OPERAZIONE ANNULLATA.\n\nIl percorso del browser \"Firefox\", utilizzato per la navigazione della reportistica, non sembra essere correttamente configurato.\n\n- Aprire la voce di menù \"GESTIONE > OPZIONI\"\n- Consultare l'help ed eseguire nell'ordine i passi indicati.*";
 arraylng["MSG_0222"]="ATTENZIONE!! - OPERAZIONE ANNULLATA.\n\nIl percorso del browser \"Firefox\" configurato nelle opzioni utente non sembra essere presente sul disco locale.\n\n- Aprire la voce di menù \"GESTIONE > OPZIONI\"\n- Consultare l'help ed eseguire nell'ordine i passi indicati.*";
+arraylng["MSG_0226"]="Le domaine du sexe , accepte uniquement les valeurs 'M' ou 'F'";
